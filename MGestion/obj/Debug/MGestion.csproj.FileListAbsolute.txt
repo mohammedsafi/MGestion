@@ -1,0 +1,48 @@
+P:\MegaCasting\Client Lourd\MGestion\MGestion\bin\Debug\MGestion.exe.config
+P:\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.csprojResolveAssemblyReference.cache
+P:\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Main.resources
+P:\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Properties.Resources.resources
+P:\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.csproj.GenerateResource.Cache
+P:\MegaCasting\Client Lourd\MGestion\MGestion\bin\Debug\MGestion.exe
+P:\MegaCasting\Client Lourd\MGestion\MGestion\bin\Debug\MGestion.pdb
+P:\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.exe
+P:\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.pdb
+P:\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Add_User.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\bin\Debug\MGestion.exe.config
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.exe
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.pdb
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\bin\Debug\MGestion.exe
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\bin\Debug\MGestion.pdb
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.csprojResolveAssemblyReference.cache
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Add_User.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Main.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Properties.Resources.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.See_User.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.csproj.GenerateResource.Cache
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Del_User.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Edit_User.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Add_Soc.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.See_Soc.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Del_Soc.resources
+C:\Users\Diavol\Desktop\MegaCasting\Client Lourd\MGestion\MGestion\obj\Debug\MGestion.Edit_Soc.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\bin\Debug\MGestion.exe.config
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.exe
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.pdb
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.csprojResolveAssemblyReference.cache
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Add_Ann.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Add_Soc.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Del_Soc.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Edit_Soc.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.See_Soc.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Add_User.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Main.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Properties.Resources.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Del_User.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Edit_User.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.See_User.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.csproj.GenerateResource.Cache
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\bin\Debug\MGestion.exe
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\bin\Debug\MGestion.pdb
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.See_Ann.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Del_Ann.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Edit_Ann.resources
