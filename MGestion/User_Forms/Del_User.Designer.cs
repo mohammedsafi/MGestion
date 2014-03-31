@@ -94,7 +94,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Del_User";
             this.Text = "Suppression d\'un utilisateur";
-            this.Load += new System.EventHandler(this.Del_User_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

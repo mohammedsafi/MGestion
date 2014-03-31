@@ -89,5 +89,64 @@ namespace MGestion
             Edit_Ann EditAnn = new Edit_Ann();
             EditAnn.Show();
         }
+
+        private void informationDeConnexionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Si on clique sur les informations de connexion
+            Info_Connection InfoConnection = new Info_Connection();
+            InfoConnection.Show();
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            //Si on quitte le programme 
+            Quit_Programs QuitPrograms = new Quit_Programs();
+            QuitPrograms.Show();
+        }
+
+        private void modificationDeLaConnexionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Si on veux modifier les informations de connexion
+            Edit_Connection EditConnection = new Edit_Connection();
+            EditConnection.Show();
+        }
+
+        private void commentUtiliserCetteApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Si on veux ouvrir la documentation de l'application
+            How_To_Use HowToUse = new How_To_Use();
+            HowToUse.Show();
+        }
+
+        private void informationSurLaConnexionÀLaBaseDeDonnéesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Information_Connexion_BDD InformationConnexionBDD = new Information_Connexion_BDD();
+            InformationConnexionBDD.Show();
+        }
+
+        private void commentConfigurerSaBaseDeDonnéesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            How_To_Configure HowToConfigure = new How_To_Configure();
+            HowToConfigure.Show();
+        }
+
+        private void informationLégaleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Legal_Information LegalInformation = new Legal_Information();
+            LegalInformation.Show();
+        }
+
+        private void nousContacterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Contact_Us ContactUs = new Contact_Us();
+            ContactUs.Show();
+        }
+
+        private void remerciementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thanks_To ThanksTo = new Thanks_To();
+            ThanksTo.Show();
+        }
     }
 }

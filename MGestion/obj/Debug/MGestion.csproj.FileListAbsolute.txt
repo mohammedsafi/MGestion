@@ -46,3 +46,12 @@ C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\bin\Debug\MGestion.pdb
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.See_Ann.resources
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Del_Ann.resources
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Edit_Ann.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Edit_Connection.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Info_Connection.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Quit_Programs.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.How_To_Use.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Information_Connexion_BDD.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.How_To_Configure.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Legal_Information.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Contact_Us.resources
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Thanks_To.resources

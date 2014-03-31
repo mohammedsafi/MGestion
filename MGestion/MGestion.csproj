@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MG_Gestion.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -67,6 +70,60 @@
     </Compile>
     <Compile Include="Announce_Forms\See_Ann.Designer.cs">
       <DependentUpon>See_Ann.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Aide_Forms\How_To_Configure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Aide_Forms\How_To_Configure.Designer.cs">
+      <DependentUpon>How_To_Configure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Aide_Forms\How_To_Use.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Aide_Forms\How_To_Use.Designer.cs">
+      <DependentUpon>How_To_Use.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Aide_Forms\Information_Connexion_BDD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Aide_Forms\Information_Connexion_BDD.Designer.cs">
+      <DependentUpon>Information_Connexion_BDD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Apropos_Forms\Contact_Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Apropos_Forms\Contact_Us.Designer.cs">
+      <DependentUpon>Contact_Us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Apropos_Forms\Legal_Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Apropos_Forms\Legal_Information.Designer.cs">
+      <DependentUpon>Legal_Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Apropos_Forms\Thanks_To.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Apropos_Forms\Thanks_To.Designer.cs">
+      <DependentUpon>Thanks_To.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Fichier_Forms\Edit_Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Fichier_Forms\Edit_Connection.Designer.cs">
+      <DependentUpon>Edit_Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Fichier_Forms\Info_Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Fichier_Forms\Info_Connection.Designer.cs">
+      <DependentUpon>Info_Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuStrip_Fichier_Forms\Quit_Programs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuStrip_Fichier_Forms\Quit_Programs.Designer.cs">
+      <DependentUpon>Quit_Programs.cs</DependentUpon>
     </Compile>
     <Compile Include="Society_Forms\Add_Soc.cs">
       <SubType>Form</SubType>
@@ -136,6 +193,33 @@
     <EmbeddedResource Include="Announce_Forms\See_Ann.resx">
       <DependentUpon>See_Ann.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Aide_Forms\How_To_Configure.resx">
+      <DependentUpon>How_To_Configure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Aide_Forms\How_To_Use.resx">
+      <DependentUpon>How_To_Use.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Aide_Forms\Information_Connexion_BDD.resx">
+      <DependentUpon>Information_Connexion_BDD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Apropos_Forms\Contact_Us.resx">
+      <DependentUpon>Contact_Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Apropos_Forms\Legal_Information.resx">
+      <DependentUpon>Legal_Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Apropos_Forms\Thanks_To.resx">
+      <DependentUpon>Thanks_To.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Fichier_Forms\Edit_Connection.resx">
+      <DependentUpon>Edit_Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Fichier_Forms\Info_Connection.resx">
+      <DependentUpon>Info_Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuStrip_Fichier_Forms\Quit_Programs.resx">
+      <DependentUpon>Quit_Programs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Society_Forms\Add_Soc.resx">
       <DependentUpon>Add_Soc.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +268,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="MG_Gestion.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

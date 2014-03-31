@@ -17,10 +17,6 @@ namespace MGestion
             InitializeComponent();
         }
 
-        private void Del_User_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void BT_Return_Click(object sender, EventArgs e)
         {

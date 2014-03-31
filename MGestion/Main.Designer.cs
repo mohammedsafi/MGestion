@@ -85,18 +85,21 @@
             this.informationDeConnexionToolStripMenuItem.Name = "informationDeConnexionToolStripMenuItem";
             this.informationDeConnexionToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.informationDeConnexionToolStripMenuItem.Text = "Information de connexion";
+            this.informationDeConnexionToolStripMenuItem.Click += new System.EventHandler(this.informationDeConnexionToolStripMenuItem_Click);
             // 
             // modificationDeLaConnexionToolStripMenuItem
             // 
             this.modificationDeLaConnexionToolStripMenuItem.Name = "modificationDeLaConnexionToolStripMenuItem";
             this.modificationDeLaConnexionToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.modificationDeLaConnexionToolStripMenuItem.Text = "Modification de la connexion";
+            this.modificationDeLaConnexionToolStripMenuItem.Click += new System.EventHandler(this.modificationDeLaConnexionToolStripMenuItem_Click);
             // 
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
+            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // aideToolStripMenuItem
             // 
@@ -113,18 +116,21 @@
             this.commentUtiliserCetteApplicationToolStripMenuItem.Name = "commentUtiliserCetteApplicationToolStripMenuItem";
             this.commentUtiliserCetteApplicationToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
             this.commentUtiliserCetteApplicationToolStripMenuItem.Text = "Comment utiliser cette application";
+            this.commentUtiliserCetteApplicationToolStripMenuItem.Click += new System.EventHandler(this.commentUtiliserCetteApplicationToolStripMenuItem_Click);
             // 
             // informationSurLaConnexionÀLaBaseDeDonnéesToolStripMenuItem
             // 
             this.informationSurLaConnexionÀLaBaseDeDonnéesToolStripMenuItem.Name = "informationSurLaConnexionÀLaBaseDeDonnéesToolStripMenuItem";
             this.informationSurLaConnexionÀLaBaseDeDonnéesToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
             this.informationSurLaConnexionÀLaBaseDeDonnéesToolStripMenuItem.Text = "Information sur la connexion à la base de données ";
+            this.informationSurLaConnexionÀLaBaseDeDonnéesToolStripMenuItem.Click += new System.EventHandler(this.informationSurLaConnexionÀLaBaseDeDonnéesToolStripMenuItem_Click);
             // 
             // commentConfigurerSaBaseDeDonnéesToolStripMenuItem
             // 
             this.commentConfigurerSaBaseDeDonnéesToolStripMenuItem.Name = "commentConfigurerSaBaseDeDonnéesToolStripMenuItem";
             this.commentConfigurerSaBaseDeDonnéesToolStripMenuItem.Size = new System.Drawing.Size(341, 22);
             this.commentConfigurerSaBaseDeDonnéesToolStripMenuItem.Text = "Comment configurer sa base de données";
+            this.commentConfigurerSaBaseDeDonnéesToolStripMenuItem.Click += new System.EventHandler(this.commentConfigurerSaBaseDeDonnéesToolStripMenuItem_Click);
             // 
             // aProposToolStripMenuItem
             // 
@@ -141,18 +147,21 @@
             this.informationLégaleToolStripMenuItem.Name = "informationLégaleToolStripMenuItem";
             this.informationLégaleToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.informationLégaleToolStripMenuItem.Text = "Information légale";
+            this.informationLégaleToolStripMenuItem.Click += new System.EventHandler(this.informationLégaleToolStripMenuItem_Click);
             // 
             // nousContacterToolStripMenuItem
             // 
             this.nousContacterToolStripMenuItem.Name = "nousContacterToolStripMenuItem";
             this.nousContacterToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.nousContacterToolStripMenuItem.Text = "Nous contacter";
+            this.nousContacterToolStripMenuItem.Click += new System.EventHandler(this.nousContacterToolStripMenuItem_Click);
             // 
             // remerciementToolStripMenuItem
             // 
             this.remerciementToolStripMenuItem.Name = "remerciementToolStripMenuItem";
             this.remerciementToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.remerciementToolStripMenuItem.Text = "Remerciement";
+            this.remerciementToolStripMenuItem.Click += new System.EventHandler(this.remerciementToolStripMenuItem_Click);
             // 
             // LBL_Title
             // 
