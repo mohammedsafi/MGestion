@@ -316,6 +316,7 @@
             this.MainMenuStrip = this.MS_Menu;
             this.Name = "Main";
             this.Text = "MGestion";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.MS_Menu.ResumeLayout(false);
             this.MS_Menu.PerformLayout();
             this.ResumeLayout(false);

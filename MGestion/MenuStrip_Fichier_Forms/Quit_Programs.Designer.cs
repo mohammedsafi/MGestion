@@ -82,6 +82,7 @@
             this.BT_Quit.TabIndex = 4;
             this.BT_Quit.Text = "Quitter";
             this.BT_Quit.UseVisualStyleBackColor = true;
+            this.BT_Quit.Click += new System.EventHandler(this.BT_Quit_Click);
             // 
             // Quit_Programs
             // 

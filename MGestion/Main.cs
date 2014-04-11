@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Inclusion du namespace pour utiliser les méthodes sur les fichiers
+using MGestion.Methods;
+
 namespace MGestion
 {
     public partial class Main : Form
@@ -147,6 +150,27 @@ namespace MGestion
         {
             Thanks_To ThanksTo = new Thanks_To();
             ThanksTo.Show();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            List<String> name = new List<String>();
+            List<String> teste = new List<String>();
+            String test = "";
+            int i = 0;
+            //Lorsqu'on lance l'application on vérifie la présence des fichiers requis
+            //Verification du fichier connexion.conf
+            Methods_File.Connection_File_Presen();
+            name = Methods_File.Load_File();
+            teste = Methods.Methods_File.Load_File();
+            test = Methods_File.Change_List_ToString(name);
+            teste = Methods_File.Parse_List_ForInformation(teste);
+            do
+            {
+                MessageBox.Show("Case : " + i + " Contient : " + (teste.ElementAt(i).ToString()) , "VALUE");
+                i++;
+            } while (i < teste.Count);
+            
         }
     }
 }

@@ -21,5 +21,10 @@ namespace MGestion
         {
             FindForm().Close(); //Ferme la fenêtre ou on se trouve
         }
+
+        private void BT_Del_Soc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

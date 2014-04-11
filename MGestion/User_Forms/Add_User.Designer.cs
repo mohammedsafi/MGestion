@@ -214,6 +214,7 @@
             this.BT_Add_User.TabIndex = 20;
             this.BT_Add_User.Text = "Je valide ";
             this.BT_Add_User.UseVisualStyleBackColor = true;
+            this.BT_Add_User.Click += new System.EventHandler(this.BT_Add_User_Click);
             // 
             // BT_Return
             // 

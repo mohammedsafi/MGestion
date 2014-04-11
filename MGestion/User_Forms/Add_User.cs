@@ -21,5 +21,10 @@ namespace MGestion
         {
             FindForm().Close(); //Récupère le formulaire sur lequel est l'utilisateur et le ferme
         }
+
+        private void BT_Add_User_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -22,5 +22,10 @@ namespace MGestion
             //Si on change d'avis
             FindForm().Close();
         }
+
+        private void BT_Quit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

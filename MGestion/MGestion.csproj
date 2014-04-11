@@ -125,6 +125,10 @@
     <Compile Include="MenuStrip_Fichier_Forms\Quit_Programs.Designer.cs">
       <DependentUpon>Quit_Programs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Methods\Methods_File.cs" />
+    <Compile Include="Object\Announce.cs" />
+    <Compile Include="Object\Society.cs" />
+    <Compile Include="Object\User.cs" />
     <Compile Include="Society_Forms\Add_Soc.cs">
       <SubType>Form</SubType>
     </Compile>

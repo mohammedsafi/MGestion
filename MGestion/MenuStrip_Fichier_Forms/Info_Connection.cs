@@ -22,5 +22,6 @@ namespace MGestion
             //Si on clique sur retour on ferme le formulaire actuel
             FindForm().Close();
         }
+
     }
 }

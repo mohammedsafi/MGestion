@@ -70,6 +70,7 @@
             this.BT_Del_Soc.TabIndex = 3;
             this.BT_Del_Soc.Text = "Supprimer l\'entreprise";
             this.BT_Del_Soc.UseVisualStyleBackColor = true;
+            this.BT_Del_Soc.Click += new System.EventHandler(this.BT_Del_Soc_Click);
             // 
             // BT_Return
             // 

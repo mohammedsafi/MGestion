@@ -36,6 +36,7 @@
             this.LBL_BDD_Check = new System.Windows.Forms.Label();
             this.LBL_Reply_Time_Ping = new System.Windows.Forms.Label();
             this.BT_Return = new System.Windows.Forms.Button();
+            this.LBL_BDD = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -51,7 +52,7 @@
             // LBL_IP_Server
             // 
             this.LBL_IP_Server.AutoSize = true;
-            this.LBL_IP_Server.Location = new System.Drawing.Point(13, 86);
+            this.LBL_IP_Server.Location = new System.Drawing.Point(13, 113);
             this.LBL_IP_Server.Name = "LBL_IP_Server";
             this.LBL_IP_Server.Size = new System.Drawing.Size(120, 13);
             this.LBL_IP_Server.TabIndex = 1;
@@ -60,7 +61,7 @@
             // LBL_BDD_User
             // 
             this.LBL_BDD_User.AutoSize = true;
-            this.LBL_BDD_User.Location = new System.Drawing.Point(13, 120);
+            this.LBL_BDD_User.Location = new System.Drawing.Point(13, 147);
             this.LBL_BDD_User.Name = "LBL_BDD_User";
             this.LBL_BDD_User.Size = new System.Drawing.Size(244, 13);
             this.LBL_BDD_User.TabIndex = 2;
@@ -69,7 +70,7 @@
             // LBL_BDD_Pass
             // 
             this.LBL_BDD_Pass.AutoSize = true;
-            this.LBL_BDD_Pass.Location = new System.Drawing.Point(13, 155);
+            this.LBL_BDD_Pass.Location = new System.Drawing.Point(13, 182);
             this.LBL_BDD_Pass.Name = "LBL_BDD_Pass";
             this.LBL_BDD_Pass.Size = new System.Drawing.Size(217, 13);
             this.LBL_BDD_Pass.TabIndex = 3;
@@ -78,7 +79,7 @@
             // LBL_BDD_Check
             // 
             this.LBL_BDD_Check.AutoSize = true;
-            this.LBL_BDD_Check.Location = new System.Drawing.Point(13, 194);
+            this.LBL_BDD_Check.Location = new System.Drawing.Point(13, 221);
             this.LBL_BDD_Check.Name = "LBL_BDD_Check";
             this.LBL_BDD_Check.Size = new System.Drawing.Size(103, 13);
             this.LBL_BDD_Check.TabIndex = 4;
@@ -87,7 +88,7 @@
             // LBL_Reply_Time_Ping
             // 
             this.LBL_Reply_Time_Ping.AutoSize = true;
-            this.LBL_Reply_Time_Ping.Location = new System.Drawing.Point(13, 237);
+            this.LBL_Reply_Time_Ping.Location = new System.Drawing.Point(13, 264);
             this.LBL_Reply_Time_Ping.Name = "LBL_Reply_Time_Ping";
             this.LBL_Reply_Time_Ping.Size = new System.Drawing.Size(154, 13);
             this.LBL_Reply_Time_Ping.TabIndex = 5;
@@ -95,7 +96,7 @@
             // 
             // BT_Return
             // 
-            this.BT_Return.Location = new System.Drawing.Point(173, 297);
+            this.BT_Return.Location = new System.Drawing.Point(173, 324);
             this.BT_Return.Name = "BT_Return";
             this.BT_Return.Size = new System.Drawing.Size(75, 23);
             this.BT_Return.TabIndex = 6;
@@ -103,11 +104,21 @@
             this.BT_Return.UseVisualStyleBackColor = true;
             this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
             // 
+            // LBL_BDD
+            // 
+            this.LBL_BDD.AutoSize = true;
+            this.LBL_BDD.Location = new System.Drawing.Point(13, 77);
+            this.LBL_BDD.Name = "LBL_BDD";
+            this.LBL_BDD.Size = new System.Drawing.Size(68, 13);
+            this.LBL_BDD.TabIndex = 7;
+            this.LBL_BDD.Text = "BDD utilisé : ";
+            // 
             // Info_Connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 379);
+            this.ClientSize = new System.Drawing.Size(453, 359);
+            this.Controls.Add(this.LBL_BDD);
             this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.LBL_Reply_Time_Ping);
             this.Controls.Add(this.LBL_BDD_Check);
@@ -132,5 +143,6 @@
         private System.Windows.Forms.Label LBL_BDD_Check;
         private System.Windows.Forms.Label LBL_Reply_Time_Ping;
         private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Label LBL_BDD;
     }
 }

@@ -38,6 +38,8 @@
             this.IB_Edit_Ip_Server = new System.Windows.Forms.TextBox();
             this.IB_Edit_BDD_User = new System.Windows.Forms.TextBox();
             this.IB_Edit_BDD_Pass = new System.Windows.Forms.TextBox();
+            this.LBL_Edit_BDD_Used = new System.Windows.Forms.Label();
+            this.IB_Edit_BDD_Used = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -53,7 +55,7 @@
             // LBL_Edit_Ip_Server
             // 
             this.LBL_Edit_Ip_Server.AutoSize = true;
-            this.LBL_Edit_Ip_Server.Location = new System.Drawing.Point(13, 72);
+            this.LBL_Edit_Ip_Server.Location = new System.Drawing.Point(14, 117);
             this.LBL_Edit_Ip_Server.Name = "LBL_Edit_Ip_Server";
             this.LBL_Edit_Ip_Server.Size = new System.Drawing.Size(117, 13);
             this.LBL_Edit_Ip_Server.TabIndex = 1;
@@ -62,7 +64,7 @@
             // LBL_Edit_BDD_User
             // 
             this.LBL_Edit_BDD_User.AutoSize = true;
-            this.LBL_Edit_BDD_User.Location = new System.Drawing.Point(13, 117);
+            this.LBL_Edit_BDD_User.Location = new System.Drawing.Point(14, 162);
             this.LBL_Edit_BDD_User.Name = "LBL_Edit_BDD_User";
             this.LBL_Edit_BDD_User.Size = new System.Drawing.Size(244, 13);
             this.LBL_Edit_BDD_User.TabIndex = 2;
@@ -71,7 +73,7 @@
             // LBL_Edit_BDD_Pass
             // 
             this.LBL_Edit_BDD_Pass.AutoSize = true;
-            this.LBL_Edit_BDD_Pass.Location = new System.Drawing.Point(13, 160);
+            this.LBL_Edit_BDD_Pass.Location = new System.Drawing.Point(14, 205);
             this.LBL_Edit_BDD_Pass.Name = "LBL_Edit_BDD_Pass";
             this.LBL_Edit_BDD_Pass.Size = new System.Drawing.Size(217, 13);
             this.LBL_Edit_BDD_Pass.TabIndex = 3;
@@ -79,16 +81,17 @@
             // 
             // BT_Valid_Edit
             // 
-            this.BT_Valid_Edit.Location = new System.Drawing.Point(122, 233);
+            this.BT_Valid_Edit.Location = new System.Drawing.Point(123, 278);
             this.BT_Valid_Edit.Name = "BT_Valid_Edit";
             this.BT_Valid_Edit.Size = new System.Drawing.Size(75, 23);
             this.BT_Valid_Edit.TabIndex = 4;
             this.BT_Valid_Edit.Text = "Je valide";
             this.BT_Valid_Edit.UseVisualStyleBackColor = true;
+            this.BT_Valid_Edit.Click += new System.EventHandler(this.BT_Valid_Edit_Click);
             // 
             // BT_Return
             // 
-            this.BT_Return.Location = new System.Drawing.Point(308, 233);
+            this.BT_Return.Location = new System.Drawing.Point(309, 278);
             this.BT_Return.Name = "BT_Return";
             this.BT_Return.Size = new System.Drawing.Size(75, 23);
             this.BT_Return.TabIndex = 5;
@@ -98,30 +101,48 @@
             // 
             // IB_Edit_Ip_Server
             // 
-            this.IB_Edit_Ip_Server.Location = new System.Drawing.Point(166, 69);
+            this.IB_Edit_Ip_Server.Location = new System.Drawing.Point(167, 114);
             this.IB_Edit_Ip_Server.Name = "IB_Edit_Ip_Server";
             this.IB_Edit_Ip_Server.Size = new System.Drawing.Size(227, 20);
             this.IB_Edit_Ip_Server.TabIndex = 6;
             // 
             // IB_Edit_BDD_User
             // 
-            this.IB_Edit_BDD_User.Location = new System.Drawing.Point(263, 114);
+            this.IB_Edit_BDD_User.Location = new System.Drawing.Point(264, 159);
             this.IB_Edit_BDD_User.Name = "IB_Edit_BDD_User";
             this.IB_Edit_BDD_User.Size = new System.Drawing.Size(227, 20);
             this.IB_Edit_BDD_User.TabIndex = 7;
             // 
             // IB_Edit_BDD_Pass
             // 
-            this.IB_Edit_BDD_Pass.Location = new System.Drawing.Point(245, 157);
+            this.IB_Edit_BDD_Pass.Location = new System.Drawing.Point(246, 202);
             this.IB_Edit_BDD_Pass.Name = "IB_Edit_BDD_Pass";
             this.IB_Edit_BDD_Pass.Size = new System.Drawing.Size(227, 20);
             this.IB_Edit_BDD_Pass.TabIndex = 8;
+            // 
+            // LBL_Edit_BDD_Used
+            // 
+            this.LBL_Edit_BDD_Used.AutoSize = true;
+            this.LBL_Edit_BDD_Used.Location = new System.Drawing.Point(14, 77);
+            this.LBL_Edit_BDD_Used.Name = "LBL_Edit_BDD_Used";
+            this.LBL_Edit_BDD_Used.Size = new System.Drawing.Size(173, 13);
+            this.LBL_Edit_BDD_Used.TabIndex = 9;
+            this.LBL_Edit_BDD_Used.Text = "Nom de la base de donnée utilisé : ";
+            // 
+            // IB_Edit_BDD_Used
+            // 
+            this.IB_Edit_BDD_Used.Location = new System.Drawing.Point(214, 74);
+            this.IB_Edit_BDD_Used.Name = "IB_Edit_BDD_Used";
+            this.IB_Edit_BDD_Used.Size = new System.Drawing.Size(227, 20);
+            this.IB_Edit_BDD_Used.TabIndex = 10;
             // 
             // Edit_Connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 293);
+            this.ClientSize = new System.Drawing.Size(542, 351);
+            this.Controls.Add(this.IB_Edit_BDD_Used);
+            this.Controls.Add(this.LBL_Edit_BDD_Used);
             this.Controls.Add(this.IB_Edit_BDD_Pass);
             this.Controls.Add(this.IB_Edit_BDD_User);
             this.Controls.Add(this.IB_Edit_Ip_Server);
@@ -134,6 +155,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Edit_Connection";
             this.Text = "Modifications liées à la connexion";
+            this.Load += new System.EventHandler(this.Edit_Connection_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +172,7 @@
         private System.Windows.Forms.TextBox IB_Edit_Ip_Server;
         private System.Windows.Forms.TextBox IB_Edit_BDD_User;
         private System.Windows.Forms.TextBox IB_Edit_BDD_Pass;
+        private System.Windows.Forms.Label LBL_Edit_BDD_Used;
+        private System.Windows.Forms.TextBox IB_Edit_BDD_Used;
     }
 }
