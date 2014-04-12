@@ -269,7 +269,7 @@
             this.BT_See_Annon.Name = "BT_See_Annon";
             this.BT_See_Annon.Size = new System.Drawing.Size(123, 58);
             this.BT_See_Annon.TabIndex = 11;
-            this.BT_See_Annon.Text = "Viusaliser une annonce";
+            this.BT_See_Annon.Text = "Visusaliser une annonce";
             this.BT_See_Annon.UseVisualStyleBackColor = true;
             this.BT_See_Annon.Click += new System.EventHandler(this.BT_See_Annon_Click);
             // 

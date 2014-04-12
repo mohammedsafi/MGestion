@@ -129,6 +129,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Info_Connection";
             this.Text = "Information sur la connexion";
+            this.Load += new System.EventHandler(this.Info_Connection_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
