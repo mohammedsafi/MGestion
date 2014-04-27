@@ -44,7 +44,7 @@ namespace MGestion
             ToSave.Add("server=" + IB_Edit_Ip_Server.Text.Trim() + ";");
             ToSave.Add("User Id=" + IB_Edit_BDD_User.Text.Trim() + ";");
             ToSave.Add("Pwd=" + IB_Edit_BDD_Pass.Text.Trim());// ---- FIN RECUP DES INFOS ---- //
-            if (IB_Edit_BDD_Used.Text != "" && IB_Edit_Ip_Server.Text != "" && IB_Edit_BDD_User.Text!= "" && IB_Edit_BDD_Pass.Text != "") //Verifie quand même au cas ou
+            if (IB_Edit_BDD_Used.Text != "" && IB_Edit_Ip_Server.Text != "" && IB_Edit_BDD_User.Text != "") //&& IB_Edit_BDD_Pass.Text != "" ||Verifie quand même au cas ou
             {
                 Methods_File.SaveInformation(ToSave); //Sauvegarde les informations
                 MessageBox.Show("Modifications apportées à la connexion avec succès","Modification effectué");

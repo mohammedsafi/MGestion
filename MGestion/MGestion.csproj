@@ -35,6 +35,18 @@
     <ApplicationIcon>MG_Gestion.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ressources\DLL_Mysql\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF5, Version=6.7.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ressources\DLL_Mysql\v4.5\MySql.Data.Entity.EF5.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.7.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ressources\DLL_Mysql\v4.5\MySql.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -125,6 +137,7 @@
     <Compile Include="MenuStrip_Fichier_Forms\Quit_Programs.Designer.cs">
       <DependentUpon>Quit_Programs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Methods\Methods_BDD.cs" />
     <Compile Include="Methods\Methods_File.cs" />
     <Compile Include="Object\Announce.cs" />
     <Compile Include="Object\Society.cs" />

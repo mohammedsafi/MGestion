@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Del_User));
             this.LBL_Title = new System.Windows.Forms.Label();
             this.LBL_Mail_Tofind = new System.Windows.Forms.Label();
-            this.TB_Mail_Tofind = new System.Windows.Forms.TextBox();
+            this.IB_Mail_Tofind = new System.Windows.Forms.TextBox();
             this.BT_Del_User = new System.Windows.Forms.Button();
             this.BT_Return = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,12 +55,12 @@
             this.LBL_Mail_Tofind.TabIndex = 1;
             this.LBL_Mail_Tofind.Text = "Adresse mail de l\'utilisateur :";
             // 
-            // TB_Mail_Tofind
+            // IB_Mail_Tofind
             // 
-            this.TB_Mail_Tofind.Location = new System.Drawing.Point(179, 56);
-            this.TB_Mail_Tofind.Name = "TB_Mail_Tofind";
-            this.TB_Mail_Tofind.Size = new System.Drawing.Size(168, 20);
-            this.TB_Mail_Tofind.TabIndex = 2;
+            this.IB_Mail_Tofind.Location = new System.Drawing.Point(179, 56);
+            this.IB_Mail_Tofind.Name = "IB_Mail_Tofind";
+            this.IB_Mail_Tofind.Size = new System.Drawing.Size(168, 20);
+            this.IB_Mail_Tofind.TabIndex = 2;
             // 
             // BT_Del_User
             // 
@@ -70,6 +70,7 @@
             this.BT_Del_User.TabIndex = 3;
             this.BT_Del_User.Text = "Je supprime l\'utilisateur";
             this.BT_Del_User.UseVisualStyleBackColor = true;
+            this.BT_Del_User.Click += new System.EventHandler(this.BT_Del_User_Click);
             // 
             // BT_Return
             // 
@@ -88,7 +89,7 @@
             this.ClientSize = new System.Drawing.Size(418, 140);
             this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.BT_Del_User);
-            this.Controls.Add(this.TB_Mail_Tofind);
+            this.Controls.Add(this.IB_Mail_Tofind);
             this.Controls.Add(this.LBL_Mail_Tofind);
             this.Controls.Add(this.LBL_Title);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -103,7 +104,7 @@
 
         private System.Windows.Forms.Label LBL_Title;
         private System.Windows.Forms.Label LBL_Mail_Tofind;
-        private System.Windows.Forms.TextBox TB_Mail_Tofind;
+        private System.Windows.Forms.TextBox IB_Mail_Tofind;
         private System.Windows.Forms.Button BT_Del_User;
         private System.Windows.Forms.Button BT_Return;
     }

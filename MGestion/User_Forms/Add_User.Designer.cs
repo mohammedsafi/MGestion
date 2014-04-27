@@ -35,7 +35,7 @@
             this.LBL_Name = new System.Windows.Forms.Label();
             this.IB_Name = new System.Windows.Forms.TextBox();
             this.LBL_Birthdate = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IB_Birthday = new System.Windows.Forms.TextBox();
             this.LBL_Fax_Number = new System.Windows.Forms.Label();
             this.IB_Fax_Number = new System.Windows.Forms.TextBox();
             this.IB_Address = new System.Windows.Forms.TextBox();
@@ -50,6 +50,8 @@
             this.LBL_Website = new System.Windows.Forms.Label();
             this.BT_Add_User = new System.Windows.Forms.Button();
             this.BT_Return = new System.Windows.Forms.Button();
+            this.IB_Mail = new System.Windows.Forms.TextBox();
+            this.LBL_Mail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -103,17 +105,17 @@
             this.LBL_Birthdate.TabIndex = 6;
             this.LBL_Birthdate.Text = "Date de naissance :";
             // 
-            // textBox1
+            // IB_Birthday
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 152);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 20);
-            this.textBox1.TabIndex = 7;
+            this.IB_Birthday.Location = new System.Drawing.Point(142, 152);
+            this.IB_Birthday.Name = "IB_Birthday";
+            this.IB_Birthday.Size = new System.Drawing.Size(169, 20);
+            this.IB_Birthday.TabIndex = 7;
             // 
             // LBL_Fax_Number
             // 
             this.LBL_Fax_Number.AutoSize = true;
-            this.LBL_Fax_Number.Location = new System.Drawing.Point(54, 181);
+            this.LBL_Fax_Number.Location = new System.Drawing.Point(54, 208);
             this.LBL_Fax_Number.Name = "LBL_Fax_Number";
             this.LBL_Fax_Number.Size = new System.Drawing.Size(82, 13);
             this.LBL_Fax_Number.TabIndex = 8;
@@ -121,42 +123,42 @@
             // 
             // IB_Fax_Number
             // 
-            this.IB_Fax_Number.Location = new System.Drawing.Point(142, 178);
+            this.IB_Fax_Number.Location = new System.Drawing.Point(142, 205);
             this.IB_Fax_Number.Name = "IB_Fax_Number";
             this.IB_Fax_Number.Size = new System.Drawing.Size(169, 20);
             this.IB_Fax_Number.TabIndex = 9;
             // 
             // IB_Address
             // 
-            this.IB_Address.Location = new System.Drawing.Point(142, 204);
+            this.IB_Address.Location = new System.Drawing.Point(142, 231);
             this.IB_Address.Name = "IB_Address";
             this.IB_Address.Size = new System.Drawing.Size(169, 20);
             this.IB_Address.TabIndex = 10;
             // 
             // IB_Job
             // 
-            this.IB_Job.Location = new System.Drawing.Point(142, 230);
+            this.IB_Job.Location = new System.Drawing.Point(142, 257);
             this.IB_Job.Name = "IB_Job";
             this.IB_Job.Size = new System.Drawing.Size(169, 20);
             this.IB_Job.TabIndex = 11;
             // 
             // IB_Phone_Number
             // 
-            this.IB_Phone_Number.Location = new System.Drawing.Point(142, 256);
+            this.IB_Phone_Number.Location = new System.Drawing.Point(142, 283);
             this.IB_Phone_Number.Name = "IB_Phone_Number";
             this.IB_Phone_Number.Size = new System.Drawing.Size(169, 20);
             this.IB_Phone_Number.TabIndex = 12;
             // 
             // IB_Password
             // 
-            this.IB_Password.Location = new System.Drawing.Point(142, 282);
+            this.IB_Password.Location = new System.Drawing.Point(142, 309);
             this.IB_Password.Name = "IB_Password";
             this.IB_Password.Size = new System.Drawing.Size(169, 20);
             this.IB_Password.TabIndex = 13;
             // 
             // IB_Website
             // 
-            this.IB_Website.Location = new System.Drawing.Point(142, 308);
+            this.IB_Website.Location = new System.Drawing.Point(142, 335);
             this.IB_Website.Name = "IB_Website";
             this.IB_Website.Size = new System.Drawing.Size(169, 20);
             this.IB_Website.TabIndex = 14;
@@ -164,7 +166,7 @@
             // LBL_Address
             // 
             this.LBL_Address.AutoSize = true;
-            this.LBL_Address.Location = new System.Drawing.Point(85, 207);
+            this.LBL_Address.Location = new System.Drawing.Point(85, 234);
             this.LBL_Address.Name = "LBL_Address";
             this.LBL_Address.Size = new System.Drawing.Size(51, 13);
             this.LBL_Address.TabIndex = 15;
@@ -173,7 +175,7 @@
             // LBL_Job
             // 
             this.LBL_Job.AutoSize = true;
-            this.LBL_Job.Location = new System.Drawing.Point(94, 233);
+            this.LBL_Job.Location = new System.Drawing.Point(94, 260);
             this.LBL_Job.Name = "LBL_Job";
             this.LBL_Job.Size = new System.Drawing.Size(42, 13);
             this.LBL_Job.TabIndex = 16;
@@ -182,7 +184,7 @@
             // LBL_Phone_Number
             // 
             this.LBL_Phone_Number.AutoSize = true;
-            this.LBL_Phone_Number.Location = new System.Drawing.Point(21, 259);
+            this.LBL_Phone_Number.Location = new System.Drawing.Point(21, 286);
             this.LBL_Phone_Number.Name = "LBL_Phone_Number";
             this.LBL_Phone_Number.Size = new System.Drawing.Size(115, 13);
             this.LBL_Phone_Number.TabIndex = 17;
@@ -191,7 +193,7 @@
             // LBL_Password
             // 
             this.LBL_Password.AutoSize = true;
-            this.LBL_Password.Location = new System.Drawing.Point(59, 285);
+            this.LBL_Password.Location = new System.Drawing.Point(59, 312);
             this.LBL_Password.Name = "LBL_Password";
             this.LBL_Password.Size = new System.Drawing.Size(77, 13);
             this.LBL_Password.TabIndex = 18;
@@ -200,7 +202,7 @@
             // LBL_Website
             // 
             this.LBL_Website.AutoSize = true;
-            this.LBL_Website.Location = new System.Drawing.Point(82, 311);
+            this.LBL_Website.Location = new System.Drawing.Point(82, 338);
             this.LBL_Website.Name = "LBL_Website";
             this.LBL_Website.Size = new System.Drawing.Size(54, 13);
             this.LBL_Website.TabIndex = 19;
@@ -226,11 +228,29 @@
             this.BT_Return.UseVisualStyleBackColor = true;
             this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
             // 
+            // IB_Mail
+            // 
+            this.IB_Mail.Location = new System.Drawing.Point(142, 179);
+            this.IB_Mail.Name = "IB_Mail";
+            this.IB_Mail.Size = new System.Drawing.Size(169, 20);
+            this.IB_Mail.TabIndex = 22;
+            // 
+            // LBL_Mail
+            // 
+            this.LBL_Mail.AutoSize = true;
+            this.LBL_Mail.Location = new System.Drawing.Point(104, 182);
+            this.LBL_Mail.Name = "LBL_Mail";
+            this.LBL_Mail.Size = new System.Drawing.Size(32, 13);
+            this.LBL_Mail.TabIndex = 23;
+            this.LBL_Mail.Text = "Mail :";
+            // 
             // Add_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 439);
+            this.Controls.Add(this.LBL_Mail);
+            this.Controls.Add(this.IB_Mail);
             this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.BT_Add_User);
             this.Controls.Add(this.LBL_Website);
@@ -245,7 +265,7 @@
             this.Controls.Add(this.IB_Address);
             this.Controls.Add(this.IB_Fax_Number);
             this.Controls.Add(this.LBL_Fax_Number);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.IB_Birthday);
             this.Controls.Add(this.LBL_Birthdate);
             this.Controls.Add(this.IB_Name);
             this.Controls.Add(this.LBL_Name);
@@ -268,7 +288,7 @@
         private System.Windows.Forms.Label LBL_Name;
         private System.Windows.Forms.TextBox IB_Name;
         private System.Windows.Forms.Label LBL_Birthdate;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox IB_Birthday;
         private System.Windows.Forms.Label LBL_Fax_Number;
         private System.Windows.Forms.TextBox IB_Fax_Number;
         private System.Windows.Forms.TextBox IB_Address;
@@ -283,5 +303,7 @@
         private System.Windows.Forms.Label LBL_Website;
         private System.Windows.Forms.Button BT_Add_User;
         private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.TextBox IB_Mail;
+        private System.Windows.Forms.Label LBL_Mail;
     }
 }

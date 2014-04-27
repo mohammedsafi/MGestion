@@ -1,0 +1,1 @@
+[SQL] INSERT INTO `personne` VALUES ('', '" + IB_Fam_Name.Text + "', '" + IB_Name.Text + "', '" + IB_Birthday.Text + "', '" + IB_Mail.Text + "', '" + IB_Fax_Number.Text + "', '" + IB_Address.Text + "', '" + IB_Job.Text + "', '" + IB_Phone_Number.Text + "', '" + IB_Password.Text + "','" + IB_Website.Text + "');

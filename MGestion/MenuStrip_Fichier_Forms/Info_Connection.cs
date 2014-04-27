@@ -44,7 +44,7 @@ namespace MGestion
                 if (Response.Status == IPStatus.Success) //Si le truc est OK
                 {
                     LBL_BDD_Check.Text = LBL_BDD_Check.Text + " ONLINE"; //Online si ça marche
-                    LBL_Reply_Time_Ping.Text = LBL_Reply_Time_Ping.Text + " environs " + Response.RoundtripTime + "s"; //Temps de réponse
+                    LBL_Reply_Time_Ping.Text = LBL_Reply_Time_Ping.Text + " environs " + Response.RoundtripTime + " ms"; //Temps de réponse
                 }
             }
             catch (Exception)

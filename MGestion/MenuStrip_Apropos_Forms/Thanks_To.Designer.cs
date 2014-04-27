@@ -49,11 +49,10 @@
             this.LBL_Contains.AutoSize = true;
             this.LBL_Contains.Location = new System.Drawing.Point(58, 67);
             this.LBL_Contains.Name = "LBL_Contains";
-            this.LBL_Contains.Size = new System.Drawing.Size(234, 91);
+            this.LBL_Contains.Size = new System.Drawing.Size(234, 78);
             this.LBL_Contains.TabIndex = 1;
             this.LBL_Contains.Text = "Remerciements à : \r\n\r\nTawfik Cadi Tazi pour son aide en C#\r\nDorian Hiron pour son" +
-    " aide en HTML/CSS/PHP\r\n\r\nBenjamin Maigné pour sa participation au projet\r\nAvant " +
-    "son départ de la formation. \r\n";
+    " aide en HTML/CSS/PHP\r\n\r\n\r\n";
             this.LBL_Contains.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BT_Return
