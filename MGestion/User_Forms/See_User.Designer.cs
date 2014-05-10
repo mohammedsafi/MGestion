@@ -223,11 +223,13 @@
             this.BT_Edit_User.TabIndex = 18;
             this.BT_Edit_User.Text = "Modifier l\'utilisateur";
             this.BT_Edit_User.UseVisualStyleBackColor = true;
+            this.BT_Edit_User.Click += new System.EventHandler(this.BT_Edit_User_Click);
             // 
             // TB_Website
             // 
             this.TB_Website.Location = new System.Drawing.Point(118, 375);
             this.TB_Website.Name = "TB_Website";
+            this.TB_Website.ReadOnly = true;
             this.TB_Website.Size = new System.Drawing.Size(180, 20);
             this.TB_Website.TabIndex = 46;
             // 
@@ -235,6 +237,7 @@
             // 
             this.TB_Job.Location = new System.Drawing.Point(118, 349);
             this.TB_Job.Name = "TB_Job";
+            this.TB_Job.ReadOnly = true;
             this.TB_Job.Size = new System.Drawing.Size(180, 20);
             this.TB_Job.TabIndex = 45;
             // 
@@ -242,6 +245,7 @@
             // 
             this.TB_Address.Location = new System.Drawing.Point(118, 324);
             this.TB_Address.Name = "TB_Address";
+            this.TB_Address.ReadOnly = true;
             this.TB_Address.Size = new System.Drawing.Size(180, 20);
             this.TB_Address.TabIndex = 44;
             // 
@@ -249,6 +253,7 @@
             // 
             this.TB_Mail.Location = new System.Drawing.Point(118, 301);
             this.TB_Mail.Name = "TB_Mail";
+            this.TB_Mail.ReadOnly = true;
             this.TB_Mail.Size = new System.Drawing.Size(180, 20);
             this.TB_Mail.TabIndex = 43;
             // 
@@ -256,6 +261,7 @@
             // 
             this.TB_Password.Location = new System.Drawing.Point(118, 278);
             this.TB_Password.Name = "TB_Password";
+            this.TB_Password.ReadOnly = true;
             this.TB_Password.Size = new System.Drawing.Size(180, 20);
             this.TB_Password.TabIndex = 42;
             // 
@@ -263,6 +269,7 @@
             // 
             this.TB_Fax_Number.Location = new System.Drawing.Point(118, 253);
             this.TB_Fax_Number.Name = "TB_Fax_Number";
+            this.TB_Fax_Number.ReadOnly = true;
             this.TB_Fax_Number.Size = new System.Drawing.Size(180, 20);
             this.TB_Fax_Number.TabIndex = 41;
             // 
@@ -270,6 +277,7 @@
             // 
             this.TB_Phone_Number.Location = new System.Drawing.Point(118, 230);
             this.TB_Phone_Number.Name = "TB_Phone_Number";
+            this.TB_Phone_Number.ReadOnly = true;
             this.TB_Phone_Number.Size = new System.Drawing.Size(180, 20);
             this.TB_Phone_Number.TabIndex = 40;
             // 
@@ -277,6 +285,7 @@
             // 
             this.TB_Birthdate.Location = new System.Drawing.Point(118, 206);
             this.TB_Birthdate.Name = "TB_Birthdate";
+            this.TB_Birthdate.ReadOnly = true;
             this.TB_Birthdate.Size = new System.Drawing.Size(180, 20);
             this.TB_Birthdate.TabIndex = 39;
             // 
@@ -284,6 +293,7 @@
             // 
             this.TB_Name.Location = new System.Drawing.Point(118, 183);
             this.TB_Name.Name = "TB_Name";
+            this.TB_Name.ReadOnly = true;
             this.TB_Name.Size = new System.Drawing.Size(180, 20);
             this.TB_Name.TabIndex = 38;
             // 
@@ -291,6 +301,7 @@
             // 
             this.TB_Fam_Name.Location = new System.Drawing.Point(118, 161);
             this.TB_Fam_Name.Name = "TB_Fam_Name";
+            this.TB_Fam_Name.ReadOnly = true;
             this.TB_Fam_Name.Size = new System.Drawing.Size(180, 20);
             this.TB_Fam_Name.TabIndex = 37;
             // 

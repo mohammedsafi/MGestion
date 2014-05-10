@@ -86,9 +86,23 @@ namespace MGestion
             }
             else
             {
-                MessageBox.Show("Vous n'avez rechercher aucun utilisateur, vous n'en supprimerer donc aucun !","Erreur 009");
+                MessageBox.Show("Vous n'avez rechercher aucun utilisateur, vous ne pourrez donc pas en supprimer un, refléchissez !","Erreur 009");
             }
         
+        }
+
+        private void BT_Edit_User_Click(object sender, EventArgs e)
+        {
+            if (Result.Count != 0)
+            {
+                Edit_User EditBySee = new Edit_User(this.Result);
+                EditBySee.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vous n'avez rechercher aucun utilisateur, vous ne pourrez donc pas en modifier un, refléchissez !", "Erreur 010");
+            }
+            
         }
 
 

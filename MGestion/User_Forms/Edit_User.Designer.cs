@@ -54,7 +54,7 @@
             this.TB_Password = new System.Windows.Forms.TextBox();
             this.TB_Mail = new System.Windows.Forms.TextBox();
             this.TB_Address = new System.Windows.Forms.TextBox();
-            this.TB_job = new System.Windows.Forms.TextBox();
+            this.TB_Job = new System.Windows.Forms.TextBox();
             this.TB_Website = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -268,12 +268,12 @@
             this.TB_Address.Size = new System.Drawing.Size(180, 20);
             this.TB_Address.TabIndex = 34;
             // 
-            // TB_job
+            // TB_Job
             // 
-            this.TB_job.Location = new System.Drawing.Point(132, 333);
-            this.TB_job.Name = "TB_job";
-            this.TB_job.Size = new System.Drawing.Size(180, 20);
-            this.TB_job.TabIndex = 35;
+            this.TB_Job.Location = new System.Drawing.Point(132, 333);
+            this.TB_Job.Name = "TB_Job";
+            this.TB_Job.Size = new System.Drawing.Size(180, 20);
+            this.TB_Job.TabIndex = 35;
             // 
             // TB_Website
             // 
@@ -288,7 +288,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 433);
             this.Controls.Add(this.TB_Website);
-            this.Controls.Add(this.TB_job);
+            this.Controls.Add(this.TB_Job);
             this.Controls.Add(this.TB_Address);
             this.Controls.Add(this.TB_Mail);
             this.Controls.Add(this.TB_Password);
@@ -317,6 +317,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Edit_User";
             this.Text = "Modifier un utilisateur";
+            this.Load += new System.EventHandler(this.Edit_User_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,7 +350,7 @@
         private System.Windows.Forms.TextBox TB_Password;
         private System.Windows.Forms.TextBox TB_Mail;
         private System.Windows.Forms.TextBox TB_Address;
-        private System.Windows.Forms.TextBox TB_job;
+        private System.Windows.Forms.TextBox TB_Job;
         private System.Windows.Forms.TextBox TB_Website;
     }
 }
