@@ -167,7 +167,7 @@ namespace MGestion
             {
                 String MSG = "VALUE : " + Data.ElementAt(I).ToString();
                 String TITLE = "ELEMENT : " + I.ToString();
-                MessageBox.Show(MSG,TITLE);
+                MessageBox.Show(MSG, TITLE);
                 I++;
             }
             Countest = Methods_BDD.MakeACount(Connection, "SELECT COUNT(*) FROM personne;");

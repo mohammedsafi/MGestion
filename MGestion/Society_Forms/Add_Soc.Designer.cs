@@ -196,6 +196,7 @@
             this.BT_Add_Soc.TabIndex = 17;
             this.BT_Add_Soc.Text = "Ajouter";
             this.BT_Add_Soc.UseVisualStyleBackColor = true;
+            this.BT_Add_Soc.Click += new System.EventHandler(this.BT_Add_Soc_Click);
             // 
             // BT_Return
             // 
