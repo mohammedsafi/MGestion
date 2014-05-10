@@ -47,6 +47,16 @@
             this.BT_Del_User = new System.Windows.Forms.Button();
             this.BT_Return = new System.Windows.Forms.Button();
             this.BT_Edit_User = new System.Windows.Forms.Button();
+            this.TB_Website = new System.Windows.Forms.TextBox();
+            this.TB_Job = new System.Windows.Forms.TextBox();
+            this.TB_Address = new System.Windows.Forms.TextBox();
+            this.TB_Mail = new System.Windows.Forms.TextBox();
+            this.TB_Password = new System.Windows.Forms.TextBox();
+            this.TB_Fax_Number = new System.Windows.Forms.TextBox();
+            this.TB_Phone_Number = new System.Windows.Forms.TextBox();
+            this.TB_Birthdate = new System.Windows.Forms.TextBox();
+            this.TB_Name = new System.Windows.Forms.TextBox();
+            this.TB_Fam_Name = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -93,6 +103,7 @@
             this.BT_MailToFind.TabIndex = 4;
             this.BT_MailToFind.Text = "Trouver";
             this.BT_MailToFind.UseVisualStyleBackColor = true;
+            this.BT_MailToFind.Click += new System.EventHandler(this.BT_MailToFind_Click);
             // 
             // LBL_Fam_Name
             // 
@@ -192,6 +203,7 @@
             this.BT_Del_User.TabIndex = 16;
             this.BT_Del_User.Text = "Supprimer l\'utilisateur";
             this.BT_Del_User.UseVisualStyleBackColor = true;
+            this.BT_Del_User.Click += new System.EventHandler(this.BT_Del_User_Click);
             // 
             // BT_Return
             // 
@@ -212,11 +224,91 @@
             this.BT_Edit_User.Text = "Modifier l\'utilisateur";
             this.BT_Edit_User.UseVisualStyleBackColor = true;
             // 
+            // TB_Website
+            // 
+            this.TB_Website.Location = new System.Drawing.Point(118, 375);
+            this.TB_Website.Name = "TB_Website";
+            this.TB_Website.Size = new System.Drawing.Size(180, 20);
+            this.TB_Website.TabIndex = 46;
+            // 
+            // TB_Job
+            // 
+            this.TB_Job.Location = new System.Drawing.Point(118, 349);
+            this.TB_Job.Name = "TB_Job";
+            this.TB_Job.Size = new System.Drawing.Size(180, 20);
+            this.TB_Job.TabIndex = 45;
+            // 
+            // TB_Address
+            // 
+            this.TB_Address.Location = new System.Drawing.Point(118, 324);
+            this.TB_Address.Name = "TB_Address";
+            this.TB_Address.Size = new System.Drawing.Size(180, 20);
+            this.TB_Address.TabIndex = 44;
+            // 
+            // TB_Mail
+            // 
+            this.TB_Mail.Location = new System.Drawing.Point(118, 301);
+            this.TB_Mail.Name = "TB_Mail";
+            this.TB_Mail.Size = new System.Drawing.Size(180, 20);
+            this.TB_Mail.TabIndex = 43;
+            // 
+            // TB_Password
+            // 
+            this.TB_Password.Location = new System.Drawing.Point(118, 278);
+            this.TB_Password.Name = "TB_Password";
+            this.TB_Password.Size = new System.Drawing.Size(180, 20);
+            this.TB_Password.TabIndex = 42;
+            // 
+            // TB_Fax_Number
+            // 
+            this.TB_Fax_Number.Location = new System.Drawing.Point(118, 253);
+            this.TB_Fax_Number.Name = "TB_Fax_Number";
+            this.TB_Fax_Number.Size = new System.Drawing.Size(180, 20);
+            this.TB_Fax_Number.TabIndex = 41;
+            // 
+            // TB_Phone_Number
+            // 
+            this.TB_Phone_Number.Location = new System.Drawing.Point(118, 230);
+            this.TB_Phone_Number.Name = "TB_Phone_Number";
+            this.TB_Phone_Number.Size = new System.Drawing.Size(180, 20);
+            this.TB_Phone_Number.TabIndex = 40;
+            // 
+            // TB_Birthdate
+            // 
+            this.TB_Birthdate.Location = new System.Drawing.Point(118, 206);
+            this.TB_Birthdate.Name = "TB_Birthdate";
+            this.TB_Birthdate.Size = new System.Drawing.Size(180, 20);
+            this.TB_Birthdate.TabIndex = 39;
+            // 
+            // TB_Name
+            // 
+            this.TB_Name.Location = new System.Drawing.Point(118, 183);
+            this.TB_Name.Name = "TB_Name";
+            this.TB_Name.Size = new System.Drawing.Size(180, 20);
+            this.TB_Name.TabIndex = 38;
+            // 
+            // TB_Fam_Name
+            // 
+            this.TB_Fam_Name.Location = new System.Drawing.Point(118, 161);
+            this.TB_Fam_Name.Name = "TB_Fam_Name";
+            this.TB_Fam_Name.Size = new System.Drawing.Size(180, 20);
+            this.TB_Fam_Name.TabIndex = 37;
+            // 
             // See_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 483);
+            this.Controls.Add(this.TB_Website);
+            this.Controls.Add(this.TB_Job);
+            this.Controls.Add(this.TB_Address);
+            this.Controls.Add(this.TB_Mail);
+            this.Controls.Add(this.TB_Password);
+            this.Controls.Add(this.TB_Fax_Number);
+            this.Controls.Add(this.TB_Phone_Number);
+            this.Controls.Add(this.TB_Birthdate);
+            this.Controls.Add(this.TB_Name);
+            this.Controls.Add(this.TB_Fam_Name);
             this.Controls.Add(this.BT_Edit_User);
             this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.BT_Del_User);
@@ -264,5 +356,15 @@
         private System.Windows.Forms.Button BT_Del_User;
         private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.Button BT_Edit_User;
+        private System.Windows.Forms.TextBox TB_Website;
+        private System.Windows.Forms.TextBox TB_Job;
+        private System.Windows.Forms.TextBox TB_Address;
+        private System.Windows.Forms.TextBox TB_Mail;
+        private System.Windows.Forms.TextBox TB_Password;
+        private System.Windows.Forms.TextBox TB_Fax_Number;
+        private System.Windows.Forms.TextBox TB_Phone_Number;
+        private System.Windows.Forms.TextBox TB_Birthdate;
+        private System.Windows.Forms.TextBox TB_Name;
+        private System.Windows.Forms.TextBox TB_Fam_Name;
     }
 }

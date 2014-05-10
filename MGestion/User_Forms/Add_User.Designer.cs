@@ -35,7 +35,6 @@
             this.LBL_Name = new System.Windows.Forms.Label();
             this.IB_Name = new System.Windows.Forms.TextBox();
             this.LBL_Birthdate = new System.Windows.Forms.Label();
-            this.IB_Birthday = new System.Windows.Forms.TextBox();
             this.LBL_Fax_Number = new System.Windows.Forms.Label();
             this.IB_Fax_Number = new System.Windows.Forms.TextBox();
             this.IB_Address = new System.Windows.Forms.TextBox();
@@ -52,6 +51,7 @@
             this.BT_Return = new System.Windows.Forms.Button();
             this.IB_Mail = new System.Windows.Forms.TextBox();
             this.LBL_Mail = new System.Windows.Forms.Label();
+            this.DTP_Naissance = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -104,13 +104,6 @@
             this.LBL_Birthdate.Size = new System.Drawing.Size(102, 13);
             this.LBL_Birthdate.TabIndex = 6;
             this.LBL_Birthdate.Text = "Date de naissance :";
-            // 
-            // IB_Birthday
-            // 
-            this.IB_Birthday.Location = new System.Drawing.Point(142, 152);
-            this.IB_Birthday.Name = "IB_Birthday";
-            this.IB_Birthday.Size = new System.Drawing.Size(169, 20);
-            this.IB_Birthday.TabIndex = 7;
             // 
             // LBL_Fax_Number
             // 
@@ -244,11 +237,19 @@
             this.LBL_Mail.TabIndex = 23;
             this.LBL_Mail.Text = "Mail :";
             // 
+            // DTP_Naissance
+            // 
+            this.DTP_Naissance.Location = new System.Drawing.Point(143, 155);
+            this.DTP_Naissance.Name = "DTP_Naissance";
+            this.DTP_Naissance.Size = new System.Drawing.Size(168, 20);
+            this.DTP_Naissance.TabIndex = 24;
+            // 
             // Add_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 439);
+            this.Controls.Add(this.DTP_Naissance);
             this.Controls.Add(this.LBL_Mail);
             this.Controls.Add(this.IB_Mail);
             this.Controls.Add(this.BT_Return);
@@ -265,7 +266,6 @@
             this.Controls.Add(this.IB_Address);
             this.Controls.Add(this.IB_Fax_Number);
             this.Controls.Add(this.LBL_Fax_Number);
-            this.Controls.Add(this.IB_Birthday);
             this.Controls.Add(this.LBL_Birthdate);
             this.Controls.Add(this.IB_Name);
             this.Controls.Add(this.LBL_Name);
@@ -288,7 +288,6 @@
         private System.Windows.Forms.Label LBL_Name;
         private System.Windows.Forms.TextBox IB_Name;
         private System.Windows.Forms.Label LBL_Birthdate;
-        private System.Windows.Forms.TextBox IB_Birthday;
         private System.Windows.Forms.Label LBL_Fax_Number;
         private System.Windows.Forms.TextBox IB_Fax_Number;
         private System.Windows.Forms.TextBox IB_Address;
@@ -305,5 +304,6 @@
         private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.TextBox IB_Mail;
         private System.Windows.Forms.Label LBL_Mail;
+        private System.Windows.Forms.DateTimePicker DTP_Naissance;
     }
 }
