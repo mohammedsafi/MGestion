@@ -48,7 +48,6 @@
             this.BT_Return = new System.Windows.Forms.Button();
             this.TB_Fam_Name = new System.Windows.Forms.TextBox();
             this.TB_Name = new System.Windows.Forms.TextBox();
-            this.TB_Birthdate = new System.Windows.Forms.TextBox();
             this.TB_Phone_Number = new System.Windows.Forms.TextBox();
             this.TB_Fax_Number = new System.Windows.Forms.TextBox();
             this.TB_Password = new System.Windows.Forms.TextBox();
@@ -56,6 +55,7 @@
             this.TB_Address = new System.Windows.Forms.TextBox();
             this.TB_Job = new System.Windows.Forms.TextBox();
             this.TB_Website = new System.Windows.Forms.TextBox();
+            this.DTP_Naissance = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -92,6 +92,7 @@
             this.BT_Mail_Tofind.TabIndex = 3;
             this.BT_Mail_Tofind.Text = "Chercher l\'utilisateur";
             this.BT_Mail_Tofind.UseVisualStyleBackColor = true;
+            this.BT_Mail_Tofind.Click += new System.EventHandler(this.BT_Mail_Tofind_Click);
             // 
             // label1
             // 
@@ -201,6 +202,7 @@
             this.BT_Edit_User.TabIndex = 25;
             this.BT_Edit_User.Text = "Modifier l\'utilisateur";
             this.BT_Edit_User.UseVisualStyleBackColor = true;
+            this.BT_Edit_User.Click += new System.EventHandler(this.BT_Edit_User_Click);
             // 
             // BT_Return
             // 
@@ -225,13 +227,6 @@
             this.TB_Name.Name = "TB_Name";
             this.TB_Name.Size = new System.Drawing.Size(180, 20);
             this.TB_Name.TabIndex = 28;
-            // 
-            // TB_Birthdate
-            // 
-            this.TB_Birthdate.Location = new System.Drawing.Point(132, 190);
-            this.TB_Birthdate.Name = "TB_Birthdate";
-            this.TB_Birthdate.Size = new System.Drawing.Size(180, 20);
-            this.TB_Birthdate.TabIndex = 29;
             // 
             // TB_Phone_Number
             // 
@@ -277,16 +272,24 @@
             // 
             // TB_Website
             // 
-            this.TB_Website.Location = new System.Drawing.Point(132, 359);
+            this.TB_Website.Location = new System.Drawing.Point(132, 356);
             this.TB_Website.Name = "TB_Website";
             this.TB_Website.Size = new System.Drawing.Size(180, 20);
             this.TB_Website.TabIndex = 36;
+            // 
+            // DTP_Naissance
+            // 
+            this.DTP_Naissance.Location = new System.Drawing.Point(132, 191);
+            this.DTP_Naissance.Name = "DTP_Naissance";
+            this.DTP_Naissance.Size = new System.Drawing.Size(180, 20);
+            this.DTP_Naissance.TabIndex = 37;
             // 
             // Edit_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 433);
+            this.Controls.Add(this.DTP_Naissance);
             this.Controls.Add(this.TB_Website);
             this.Controls.Add(this.TB_Job);
             this.Controls.Add(this.TB_Address);
@@ -294,7 +297,6 @@
             this.Controls.Add(this.TB_Password);
             this.Controls.Add(this.TB_Fax_Number);
             this.Controls.Add(this.TB_Phone_Number);
-            this.Controls.Add(this.TB_Birthdate);
             this.Controls.Add(this.TB_Name);
             this.Controls.Add(this.TB_Fam_Name);
             this.Controls.Add(this.BT_Return);
@@ -344,7 +346,6 @@
         private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.TextBox TB_Fam_Name;
         private System.Windows.Forms.TextBox TB_Name;
-        private System.Windows.Forms.TextBox TB_Birthdate;
         private System.Windows.Forms.TextBox TB_Phone_Number;
         private System.Windows.Forms.TextBox TB_Fax_Number;
         private System.Windows.Forms.TextBox TB_Password;
@@ -352,5 +353,6 @@
         private System.Windows.Forms.TextBox TB_Address;
         private System.Windows.Forms.TextBox TB_Job;
         private System.Windows.Forms.TextBox TB_Website;
+        private System.Windows.Forms.DateTimePicker DTP_Naissance;
     }
 }
