@@ -102,12 +102,11 @@ namespace MGestion.Methods
                 //Alors connexion OK
                 List<String> Data = new List<String>();
                 MySqlCommand SQLRequest = new MySqlCommand(Request, Connection); //Prépa de la commande
-                
+                MySqlDataReader DataRead = SQLRequest.ExecuteReader();
+                DataRead.Read();
                 switch (OnTable)
                 {
                     case 1: //Si on choisis la table personne
-                        MySqlDataReader DataRead = SQLRequest.ExecuteReader();
-                        DataRead.Read();
                         Data.Add(DataRead.GetInt32(0).ToString());
                         Data.Add(DataRead.GetString(1).ToString());
                         Data.Add(DataRead.GetString(2).ToString());
@@ -119,6 +118,18 @@ namespace MGestion.Methods
                         Data.Add(DataRead.GetString(8).ToString());
                         Data.Add(DataRead.GetString(9).ToString());
                         Data.Add(DataRead.GetString(10).ToString());
+                        DataRead.Close();
+                        return Data;
+                    case 2: //Si on choisis la table société
+                        Data.Add(DataRead.GetInt32(0).ToString());
+                        Data.Add(DataRead.GetString(1).ToString());
+                        Data.Add(DataRead.GetString(2).ToString());
+                        Data.Add(DataRead.GetString(3).ToString());
+                        Data.Add(DataRead.GetString(4).ToString());
+                        Data.Add(DataRead.GetString(5).ToString());
+                        Data.Add(DataRead.GetString(6).ToString());
+                        Data.Add(DataRead.GetInt32(7).ToString());
+                        Data.Add(DataRead.GetString(8).ToString());
                         DataRead.Close();
                         return Data;
                     default:

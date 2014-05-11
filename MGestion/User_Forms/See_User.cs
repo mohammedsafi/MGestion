@@ -83,6 +83,17 @@ namespace MGestion
                     MessageBox.Show("L'utilisateur a bien été supprimé", "Successfull");
                 }
                 Methods_BDD.CloseConnectionPossible(Connection); //Ferme la connexion si il n'y a pas d'erreur
+                //Alors on affiche le truc
+                TB_Fam_Name.Text = "";
+                TB_Name.Text = "";
+                TB_Birthdate.Text = "";
+                TB_Phone_Number.Text = "";
+                TB_Fax_Number.Text = "";
+                TB_Password.Text = "";
+                TB_Mail.Text = "";
+                TB_Address.Text = "";
+                TB_Job.Text = "";
+                TB_Website.Text = "";
             }
             else
             {

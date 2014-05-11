@@ -87,7 +87,7 @@ namespace MGestion
             Request = "SELECT * FROM personne WHERE Personne_Mail = '" + Tofind.Trim() + "';";
             Connection = Methods_BDD.ConnectionPossible(); //Ouvre la connexion si il n'y a pas d'erreur
             Result = Methods_BDD.MakeASelect(Connection, Request, 1);
-            if (Result != null)
+            if (Result.Count != 0)
             {
                 //Alors on affiche le truc
                 TB_Fam_Name.Text = Result[1];

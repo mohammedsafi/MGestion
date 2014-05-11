@@ -45,6 +45,14 @@
             this.BT_Edit_Soc = new System.Windows.Forms.Button();
             this.BT_Return = new System.Windows.Forms.Button();
             this.BT_Del_Soc = new System.Windows.Forms.Button();
+            this.TB_Phone_Number = new System.Windows.Forms.TextBox();
+            this.TB_Mail = new System.Windows.Forms.TextBox();
+            this.TB_Type = new System.Windows.Forms.TextBox();
+            this.TB_Code_Postal = new System.Windows.Forms.TextBox();
+            this.TB_City = new System.Windows.Forms.TextBox();
+            this.TB_Address = new System.Windows.Forms.TextBox();
+            this.TB_Social_Reason = new System.Windows.Forms.TextBox();
+            this.TB_Name = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -91,6 +99,7 @@
             this.BT_Name_Enterprise_Tofind.TabIndex = 6;
             this.BT_Name_Enterprise_Tofind.Text = "Trouver l\'entreprise";
             this.BT_Name_Enterprise_Tofind.UseVisualStyleBackColor = true;
+            this.BT_Name_Enterprise_Tofind.Click += new System.EventHandler(this.BT_Name_Enterprise_Tofind_Click);
             // 
             // LBL_Name
             // 
@@ -158,7 +167,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 393);
+            this.label1.Location = new System.Drawing.Point(15, 388);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 14;
@@ -191,12 +200,85 @@
             this.BT_Del_Soc.TabIndex = 19;
             this.BT_Del_Soc.Text = "Supprimer la société";
             this.BT_Del_Soc.UseVisualStyleBackColor = true;
+            this.BT_Del_Soc.Click += new System.EventHandler(this.BT_Del_Soc_Click);
+            // 
+            // TB_Phone_Number
+            // 
+            this.TB_Phone_Number.Location = new System.Drawing.Point(109, 385);
+            this.TB_Phone_Number.Name = "TB_Phone_Number";
+            this.TB_Phone_Number.ReadOnly = true;
+            this.TB_Phone_Number.Size = new System.Drawing.Size(155, 20);
+            this.TB_Phone_Number.TabIndex = 53;
+            // 
+            // TB_Mail
+            // 
+            this.TB_Mail.Location = new System.Drawing.Point(110, 359);
+            this.TB_Mail.Name = "TB_Mail";
+            this.TB_Mail.ReadOnly = true;
+            this.TB_Mail.Size = new System.Drawing.Size(155, 20);
+            this.TB_Mail.TabIndex = 52;
+            // 
+            // TB_Type
+            // 
+            this.TB_Type.Location = new System.Drawing.Point(110, 331);
+            this.TB_Type.Name = "TB_Type";
+            this.TB_Type.ReadOnly = true;
+            this.TB_Type.Size = new System.Drawing.Size(155, 20);
+            this.TB_Type.TabIndex = 51;
+            // 
+            // TB_Code_Postal
+            // 
+            this.TB_Code_Postal.Location = new System.Drawing.Point(109, 305);
+            this.TB_Code_Postal.Name = "TB_Code_Postal";
+            this.TB_Code_Postal.ReadOnly = true;
+            this.TB_Code_Postal.Size = new System.Drawing.Size(155, 20);
+            this.TB_Code_Postal.TabIndex = 50;
+            // 
+            // TB_City
+            // 
+            this.TB_City.Location = new System.Drawing.Point(109, 281);
+            this.TB_City.Name = "TB_City";
+            this.TB_City.ReadOnly = true;
+            this.TB_City.Size = new System.Drawing.Size(155, 20);
+            this.TB_City.TabIndex = 49;
+            // 
+            // TB_Address
+            // 
+            this.TB_Address.Location = new System.Drawing.Point(109, 256);
+            this.TB_Address.Name = "TB_Address";
+            this.TB_Address.ReadOnly = true;
+            this.TB_Address.Size = new System.Drawing.Size(155, 20);
+            this.TB_Address.TabIndex = 48;
+            // 
+            // TB_Social_Reason
+            // 
+            this.TB_Social_Reason.Location = new System.Drawing.Point(109, 231);
+            this.TB_Social_Reason.Name = "TB_Social_Reason";
+            this.TB_Social_Reason.ReadOnly = true;
+            this.TB_Social_Reason.Size = new System.Drawing.Size(155, 20);
+            this.TB_Social_Reason.TabIndex = 47;
+            // 
+            // TB_Name
+            // 
+            this.TB_Name.Location = new System.Drawing.Point(109, 208);
+            this.TB_Name.Name = "TB_Name";
+            this.TB_Name.ReadOnly = true;
+            this.TB_Name.Size = new System.Drawing.Size(155, 20);
+            this.TB_Name.TabIndex = 46;
             // 
             // See_Soc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 490);
+            this.Controls.Add(this.TB_Phone_Number);
+            this.Controls.Add(this.TB_Mail);
+            this.Controls.Add(this.TB_Type);
+            this.Controls.Add(this.TB_Code_Postal);
+            this.Controls.Add(this.TB_City);
+            this.Controls.Add(this.TB_Address);
+            this.Controls.Add(this.TB_Social_Reason);
+            this.Controls.Add(this.TB_Name);
             this.Controls.Add(this.BT_Edit_Soc);
             this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.BT_Del_Soc);
@@ -240,5 +322,13 @@
         private System.Windows.Forms.Button BT_Edit_Soc;
         private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.Button BT_Del_Soc;
+        private System.Windows.Forms.TextBox TB_Phone_Number;
+        private System.Windows.Forms.TextBox TB_Mail;
+        private System.Windows.Forms.TextBox TB_Type;
+        private System.Windows.Forms.TextBox TB_Code_Postal;
+        private System.Windows.Forms.TextBox TB_City;
+        private System.Windows.Forms.TextBox TB_Address;
+        private System.Windows.Forms.TextBox TB_Social_Reason;
+        private System.Windows.Forms.TextBox TB_Name;
     }
 }

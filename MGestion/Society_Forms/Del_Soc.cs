@@ -35,12 +35,12 @@ namespace MGestion
             if (!Error)
             {
                 //Impossible de supprimer l'utilisateur
-                MessageBox.Show("Impossible du supprimer l'utilisateur", "Erreur 008");
+                MessageBox.Show("Impossible du supprimer la société", "Erreur 008");
             }
             else
             {
                 //Supression OK 
-                MessageBox.Show("L'utilisateur a bien été supprimé", "Successfull");
+                MessageBox.Show("La société a bien été supprimé", "Successfull");
             }
             Methods_BDD.CloseConnectionPossible(Connection); //Ferme la connexion si il n'y a pas d'erreur
         }
