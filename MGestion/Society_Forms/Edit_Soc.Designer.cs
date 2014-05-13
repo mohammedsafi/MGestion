@@ -134,6 +134,7 @@
             this.BT_Name_Enterprise_Tofind.TabIndex = 26;
             this.BT_Name_Enterprise_Tofind.Text = "Trouver l\'entreprise";
             this.BT_Name_Enterprise_Tofind.UseVisualStyleBackColor = true;
+            this.BT_Name_Enterprise_Tofind.Click += new System.EventHandler(this.BT_Name_Enterprise_Tofind_Click);
             // 
             // TB_Name_Enterprise_Tofind
             // 
@@ -245,6 +246,7 @@
             this.BT_Edit_Soc.TabIndex = 46;
             this.BT_Edit_Soc.Text = "Modifier la société";
             this.BT_Edit_Soc.UseVisualStyleBackColor = true;
+            this.BT_Edit_Soc.Click += new System.EventHandler(this.BT_Edit_Soc_Click);
             // 
             // Edit_Soc
             // 
@@ -277,6 +279,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Edit_Soc";
             this.Text = "Modifier une société";
+            this.Load += new System.EventHandler(this.Edit_Soc_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

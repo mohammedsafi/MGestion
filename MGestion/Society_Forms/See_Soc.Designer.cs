@@ -181,6 +181,7 @@
             this.BT_Edit_Soc.TabIndex = 21;
             this.BT_Edit_Soc.Text = "Modifier la société";
             this.BT_Edit_Soc.UseVisualStyleBackColor = true;
+            this.BT_Edit_Soc.Click += new System.EventHandler(this.BT_Edit_Soc_Click);
             // 
             // BT_Return
             // 

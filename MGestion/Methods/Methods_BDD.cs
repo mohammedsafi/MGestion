@@ -107,35 +107,49 @@ namespace MGestion.Methods
                 switch (OnTable)
                 {
                     case 1: //Si on choisis la table personne
-                        Data.Add(DataRead.GetInt32(0).ToString());
-                        Data.Add(DataRead.GetString(1).ToString());
-                        Data.Add(DataRead.GetString(2).ToString());
-                        Data.Add(DataRead.GetMySqlDateTime(3).ToString());
-                        Data.Add(DataRead.GetString(4).ToString());
-                        Data.Add(DataRead.GetString(5).ToString());
-                        Data.Add(DataRead.GetString(6).ToString());
-                        Data.Add(DataRead.GetString(7).ToString());
-                        Data.Add(DataRead.GetString(8).ToString());
-                        Data.Add(DataRead.GetString(9).ToString());
-                        Data.Add(DataRead.GetString(10).ToString());
-                        DataRead.Close();
+                        try
+                        {
+                            Data.Add(DataRead.GetInt32(0).ToString());
+                            Data.Add(DataRead.GetString(1).ToString());
+                            Data.Add(DataRead.GetString(2).ToString());
+                            Data.Add(DataRead.GetMySqlDateTime(3).ToString());
+                            Data.Add(DataRead.GetString(4).ToString());
+                            Data.Add(DataRead.GetString(5).ToString());
+                            Data.Add(DataRead.GetString(6).ToString());
+                            Data.Add(DataRead.GetString(7).ToString());
+                            Data.Add(DataRead.GetString(8).ToString());
+                            Data.Add(DataRead.GetString(9).ToString());
+                            Data.Add(DataRead.GetString(10).ToString());
+                            DataRead.Close();
+                        }
+                        catch (Exception)
+                        {
+                            return Data;
+                        }
                         return Data;
                     case 2: //Si on choisis la table société
-                        Data.Add(DataRead.GetInt32(0).ToString());
-                        Data.Add(DataRead.GetString(1).ToString());
-                        Data.Add(DataRead.GetString(2).ToString());
-                        Data.Add(DataRead.GetString(3).ToString());
-                        Data.Add(DataRead.GetString(4).ToString());
-                        Data.Add(DataRead.GetString(5).ToString());
-                        Data.Add(DataRead.GetString(6).ToString());
-                        Data.Add(DataRead.GetInt32(7).ToString());
-                        Data.Add(DataRead.GetString(8).ToString());
-                        DataRead.Close();
+                        try
+                        {
+                            Data.Add(DataRead.GetInt32(0).ToString());
+                            Data.Add(DataRead.GetString(1).ToString());
+                            Data.Add(DataRead.GetString(2).ToString());
+                            Data.Add(DataRead.GetString(3).ToString());
+                            Data.Add(DataRead.GetString(4).ToString());
+                            Data.Add(DataRead.GetString(5).ToString());
+                            Data.Add(DataRead.GetString(6).ToString());
+                            Data.Add(DataRead.GetInt32(7).ToString());
+                            Data.Add(DataRead.GetString(8).ToString());
+                            DataRead.Close();
+                        }
+                        catch (Exception)
+                        {
+                            return Data;
+                        }
                         return Data;
                     default:
-                            return Data;
+                        return Data;
                 }
-                
+
             }
             else
             {

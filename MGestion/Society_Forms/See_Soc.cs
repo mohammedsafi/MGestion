@@ -99,5 +99,18 @@ namespace MGestion
             }
             
         }
+
+        private void BT_Edit_Soc_Click(object sender, EventArgs e)
+        {
+            if (Result.Count != 0)
+            {
+                Edit_Soc EditSoc = new Edit_Soc(Result);
+                EditSoc.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Vous n'avez recherche aucun société, vous ne pourrez donc pas en supprimer une, réfléchissez !", "Erreur 012");
+            }
+        }
     }
 }
