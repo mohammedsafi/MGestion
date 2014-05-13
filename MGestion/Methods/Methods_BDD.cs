@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient; //Using pour utiliser Mysql connector
 using MGestion.Methods;
 using System.Windows.Forms; //Inclusion de la biblio pour pouvoir utiliser les mboxs
+using System.Data; //Avec ça jpeux use les datatable
 
 namespace MGestion.Methods
 {
@@ -157,9 +158,20 @@ namespace MGestion.Methods
             }
         }
 
-        // Commande
-        // Paramètre
-        // Execution
-        // Fin de la connexion
+        //Récupère un DataTable pour les loads dans les combo box 
+        public static DataTable GetTable(MySqlConnection Connection, String Request, String ColumnsID, String ColumnsLib)
+        {
+            MySqlCommand Query = new MySqlCommand(Request, Connection); //Déclare une commande
+            MySqlDataReader Data = Query.ExecuteReader(); //Execute la commande et la stocke dans data
+            DataTable Table = new DataTable(); //Crée la table 
+            Table.Columns.Add(ColumnsID, typeof(Int32)); //Récupère l'id 
+            Table.Columns.Add(ColumnsLib, typeof(String)); //Récupère la string
+            Table.Load(Data); //Load la table
+            Data.Close(); //Ferme le dataReader
+            return Table; //Renvois la table 
+        }	
+        
+        
+
     }
 }
