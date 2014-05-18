@@ -1,0 +1,1 @@
+DELETE FROM personne WHERE Personne_Mail = '" + IB_Mail_Tofind.Text +"';

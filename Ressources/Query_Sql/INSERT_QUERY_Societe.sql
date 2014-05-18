@@ -1,0 +1,1 @@
+INSERT INTO `societe` VALUES ('','" + TB_Name.Text.Trim() + "','" + TB_Social_Reason.Text.Trim() + "','" + TB_Address.Text.Trim() +"','"+ TB_City.Text.Trim() +"','"+ TB_Mail.Text.Trim() +"','"+ TB_Phone_Number.Text.Trim() +"','"+ TB_Code_Postal.Text.Trim() +"','"+ TB_Type.Text.Trim() +"');

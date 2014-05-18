@@ -44,6 +44,7 @@
             this.BT_Ref_Todelete.TabIndex = 8;
             this.BT_Ref_Todelete.Text = "Supprimer l\'annonce";
             this.BT_Ref_Todelete.UseVisualStyleBackColor = true;
+            this.BT_Ref_Todelete.Click += new System.EventHandler(this.BT_Ref_Todelete_Click);
             // 
             // TB_Ref_Todelete
             // 

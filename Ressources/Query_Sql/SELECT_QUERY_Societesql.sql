@@ -1,0 +1,1 @@
+SELECT * FROM societe WHERE Societe_Nom = '" + Tofind.Trim() + "';

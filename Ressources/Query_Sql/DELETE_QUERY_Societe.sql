@@ -1,0 +1,1 @@
+DELETE FROM societe WHERE Societe_Nom = '" + TB_Name_Todelete.Text.Trim() + "';

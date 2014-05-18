@@ -32,7 +32,6 @@
             this.LBL_Title = new System.Windows.Forms.Label();
             this.IB_Title = new System.Windows.Forms.TextBox();
             this.IB_Time_Todiff = new System.Windows.Forms.TextBox();
-            this.IB_Date_Topost = new System.Windows.Forms.TextBox();
             this.IB_About_Profil = new System.Windows.Forms.TextBox();
             this.IB_About_Post = new System.Windows.Forms.TextBox();
             this.IB_Address = new System.Windows.Forms.TextBox();
@@ -52,14 +51,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LBL_Ctrat_Type = new System.Windows.Forms.Label();
             this.LBL_Job_Cible = new System.Windows.Forms.Label();
-            this.LBL_Domain = new System.Windows.Forms.Label();
             this.LBL_Society_Author = new System.Windows.Forms.Label();
             this.BT_Return = new System.Windows.Forms.Button();
             this.BT_Add_Ann = new System.Windows.Forms.Button();
             this.CB_Ctrat_Type = new System.Windows.Forms.ComboBox();
             this.CB_Job_Cible = new System.Windows.Forms.ComboBox();
-            this.CB_Domain = new System.Windows.Forms.ComboBox();
             this.CB_Society_Author = new System.Windows.Forms.ComboBox();
+            this.DTP_Sart = new System.Windows.Forms.DateTimePicker();
+            this.LBL_Ann_Ref = new System.Windows.Forms.Label();
+            this.IB_Ref = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -85,13 +85,6 @@
             this.IB_Time_Todiff.Name = "IB_Time_Todiff";
             this.IB_Time_Todiff.Size = new System.Drawing.Size(228, 20);
             this.IB_Time_Todiff.TabIndex = 4;
-            // 
-            // IB_Date_Topost
-            // 
-            this.IB_Date_Topost.Location = new System.Drawing.Point(184, 154);
-            this.IB_Date_Topost.Name = "IB_Date_Topost";
-            this.IB_Date_Topost.Size = new System.Drawing.Size(228, 20);
-            this.IB_Date_Topost.TabIndex = 5;
             // 
             // IB_About_Profil
             // 
@@ -252,19 +245,10 @@
             this.LBL_Job_Cible.TabIndex = 28;
             this.LBL_Job_Cible.Text = "Métier ciblé :";
             // 
-            // LBL_Domain
-            // 
-            this.LBL_Domain.AutoSize = true;
-            this.LBL_Domain.Location = new System.Drawing.Point(12, 507);
-            this.LBL_Domain.Name = "LBL_Domain";
-            this.LBL_Domain.Size = new System.Drawing.Size(126, 13);
-            this.LBL_Domain.TabIndex = 29;
-            this.LBL_Domain.Text = "Domaine de métier ciblé :";
-            // 
             // LBL_Society_Author
             // 
             this.LBL_Society_Author.AutoSize = true;
-            this.LBL_Society_Author.Location = new System.Drawing.Point(12, 530);
+            this.LBL_Society_Author.Location = new System.Drawing.Point(12, 507);
             this.LBL_Society_Author.Name = "LBL_Society_Author";
             this.LBL_Society_Author.Size = new System.Drawing.Size(111, 13);
             this.LBL_Society_Author.TabIndex = 30;
@@ -272,7 +256,7 @@
             // 
             // BT_Return
             // 
-            this.BT_Return.Location = new System.Drawing.Point(322, 576);
+            this.BT_Return.Location = new System.Drawing.Point(322, 583);
             this.BT_Return.Name = "BT_Return";
             this.BT_Return.Size = new System.Drawing.Size(110, 23);
             this.BT_Return.TabIndex = 31;
@@ -282,12 +266,13 @@
             // 
             // BT_Add_Ann
             // 
-            this.BT_Add_Ann.Location = new System.Drawing.Point(131, 576);
+            this.BT_Add_Ann.Location = new System.Drawing.Point(131, 583);
             this.BT_Add_Ann.Name = "BT_Add_Ann";
             this.BT_Add_Ann.Size = new System.Drawing.Size(110, 23);
             this.BT_Add_Ann.TabIndex = 32;
             this.BT_Add_Ann.Text = "Ajouter l\'annonce";
             this.BT_Add_Ann.UseVisualStyleBackColor = true;
+            this.BT_Add_Ann.Click += new System.EventHandler(this.BT_Add_Ann_Click);
             // 
             // CB_Ctrat_Type
             // 
@@ -305,35 +290,51 @@
             this.CB_Job_Cible.Size = new System.Drawing.Size(228, 21);
             this.CB_Job_Cible.TabIndex = 34;
             // 
-            // CB_Domain
-            // 
-            this.CB_Domain.FormattingEnabled = true;
-            this.CB_Domain.Location = new System.Drawing.Point(184, 511);
-            this.CB_Domain.Name = "CB_Domain";
-            this.CB_Domain.Size = new System.Drawing.Size(228, 21);
-            this.CB_Domain.TabIndex = 35;
-            // 
             // CB_Society_Author
             // 
             this.CB_Society_Author.FormattingEnabled = true;
-            this.CB_Society_Author.Location = new System.Drawing.Point(184, 538);
+            this.CB_Society_Author.Location = new System.Drawing.Point(184, 515);
             this.CB_Society_Author.Name = "CB_Society_Author";
             this.CB_Society_Author.Size = new System.Drawing.Size(228, 21);
             this.CB_Society_Author.TabIndex = 36;
+            // 
+            // DTP_Sart
+            // 
+            this.DTP_Sart.Location = new System.Drawing.Point(184, 154);
+            this.DTP_Sart.Name = "DTP_Sart";
+            this.DTP_Sart.Size = new System.Drawing.Size(228, 20);
+            this.DTP_Sart.TabIndex = 37;
+            // 
+            // LBL_Ann_Ref
+            // 
+            this.LBL_Ann_Ref.AutoSize = true;
+            this.LBL_Ann_Ref.Location = new System.Drawing.Point(12, 545);
+            this.LBL_Ann_Ref.Name = "LBL_Ann_Ref";
+            this.LBL_Ann_Ref.Size = new System.Drawing.Size(130, 13);
+            this.LBL_Ann_Ref.TabIndex = 39;
+            this.LBL_Ann_Ref.Text = "Référence de l\'annonce : ";
+            // 
+            // IB_Ref
+            // 
+            this.IB_Ref.Location = new System.Drawing.Point(184, 542);
+            this.IB_Ref.Name = "IB_Ref";
+            this.IB_Ref.Size = new System.Drawing.Size(228, 20);
+            this.IB_Ref.TabIndex = 38;
             // 
             // Add_Ann
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 611);
+            this.ClientSize = new System.Drawing.Size(444, 618);
+            this.Controls.Add(this.LBL_Ann_Ref);
+            this.Controls.Add(this.IB_Ref);
+            this.Controls.Add(this.DTP_Sart);
             this.Controls.Add(this.CB_Society_Author);
-            this.Controls.Add(this.CB_Domain);
             this.Controls.Add(this.CB_Job_Cible);
             this.Controls.Add(this.CB_Ctrat_Type);
             this.Controls.Add(this.BT_Add_Ann);
             this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.LBL_Society_Author);
-            this.Controls.Add(this.LBL_Domain);
             this.Controls.Add(this.LBL_Job_Cible);
             this.Controls.Add(this.LBL_Ctrat_Type);
             this.Controls.Add(this.label2);
@@ -353,13 +354,13 @@
             this.Controls.Add(this.IB_Address);
             this.Controls.Add(this.IB_About_Post);
             this.Controls.Add(this.IB_About_Profil);
-            this.Controls.Add(this.IB_Date_Topost);
             this.Controls.Add(this.IB_Time_Todiff);
             this.Controls.Add(this.IB_Title);
             this.Controls.Add(this.LBL_Title);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Add_Ann";
             this.Text = "Ajouter une annonce";
+            this.Load += new System.EventHandler(this.Add_Ann_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,7 +371,6 @@
         private System.Windows.Forms.Label LBL_Title;
         private System.Windows.Forms.TextBox IB_Title;
         private System.Windows.Forms.TextBox IB_Time_Todiff;
-        private System.Windows.Forms.TextBox IB_Date_Topost;
         private System.Windows.Forms.TextBox IB_About_Profil;
         private System.Windows.Forms.TextBox IB_About_Post;
         private System.Windows.Forms.TextBox IB_Address;
@@ -390,13 +390,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LBL_Ctrat_Type;
         private System.Windows.Forms.Label LBL_Job_Cible;
-        private System.Windows.Forms.Label LBL_Domain;
         private System.Windows.Forms.Label LBL_Society_Author;
         private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.Button BT_Add_Ann;
         private System.Windows.Forms.ComboBox CB_Ctrat_Type;
         private System.Windows.Forms.ComboBox CB_Job_Cible;
-        private System.Windows.Forms.ComboBox CB_Domain;
         private System.Windows.Forms.ComboBox CB_Society_Author;
+        private System.Windows.Forms.DateTimePicker DTP_Sart;
+        private System.Windows.Forms.Label LBL_Ann_Ref;
+        private System.Windows.Forms.TextBox IB_Ref;
     }
 }
