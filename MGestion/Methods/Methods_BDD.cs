@@ -147,6 +147,32 @@ namespace MGestion.Methods
                             return Data;
                         }
                         return Data;
+                    case 3: //Si on choisis la table annonce
+                        try
+                        {
+                            Data.Add(DataRead.GetInt16(0).ToString());
+                            Data.Add(DataRead.GetString(1).ToString());
+                            Data.Add(DataRead.GetInt16(2).ToString());
+                            Data.Add(DataRead.GetMySqlDateTime(3).ToString());
+                            Data.Add(DataRead.GetString(4).ToString());
+                            Data.Add(DataRead.GetString(5).ToString());
+                            Data.Add(DataRead.GetString(6).ToString());
+                            Data.Add(DataRead.GetString(7).ToString());
+                            Data.Add(DataRead.GetString(8).ToString());
+                            Data.Add(DataRead.GetString(9).ToString());
+                            Data.Add(DataRead.GetString(10).ToString());
+                            Data.Add(DataRead.GetInt32(11).ToString());
+                            Data.Add(DataRead.GetInt32(12).ToString());
+                            Data.Add(DataRead.GetInt32(13).ToString());
+                            Data.Add(DataRead.GetString(14).ToString());
+                            return Data;
+                        }
+                        catch (Exception)
+                        {
+
+                            return Data;
+                        }
+                        return Data;
                     default:
                         return Data;
                 }
@@ -169,9 +195,9 @@ namespace MGestion.Methods
             Table.Load(Data); //Load la table
             Data.Close(); //Ferme le dataReader
             return Table; //Renvois la table 
-        }	
-        
-        
+        }
+
+
 
     }
 }

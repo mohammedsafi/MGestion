@@ -1,0 +1,1 @@
+SELECT * FROM annonce WHERE Annonce_Ref = '" + Tofind.Trim() + "';
