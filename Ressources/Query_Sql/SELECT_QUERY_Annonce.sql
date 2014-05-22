@@ -1,1 +1,3 @@
-SELECT * FROM annonce WHERE Annonce_Ref = '" + Tofind.Trim() + "';
+Request = "SELECT * FROM produit WHERE " + ToSearch.Trim() + " >= " + Type + " " + Add + ";";
+
+Request = "SELECT * FROM produit WHERE " + typeproduit= "";

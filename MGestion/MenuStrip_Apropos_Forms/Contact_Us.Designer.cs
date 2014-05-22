@@ -35,9 +35,11 @@
             this.LBL_Contains = new System.Windows.Forms.Label();
             this.IB_Contains = new System.Windows.Forms.TextBox();
             this.BT_Send = new System.Windows.Forms.Button();
-            this.BT_Return = new System.Windows.Forms.Button();
             this.LBL_SendFrom = new System.Windows.Forms.Label();
             this.IB_SendFrom = new System.Windows.Forms.TextBox();
+            this.LBL_FAI = new System.Windows.Forms.Label();
+            this.CB_FAI = new System.Windows.Forms.ComboBox();
+            this.BT_Return = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -85,23 +87,16 @@
             // 
             // BT_Send
             // 
-            this.BT_Send.Location = new System.Drawing.Point(112, 347);
+            this.BT_Send.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Send.BackgroundImage")));
+            this.BT_Send.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Send.FlatAppearance.BorderSize = 0;
+            this.BT_Send.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Send.Location = new System.Drawing.Point(430, 400);
             this.BT_Send.Name = "BT_Send";
-            this.BT_Send.Size = new System.Drawing.Size(95, 23);
+            this.BT_Send.Size = new System.Drawing.Size(42, 41);
             this.BT_Send.TabIndex = 8;
-            this.BT_Send.Text = "Envoyer";
             this.BT_Send.UseVisualStyleBackColor = true;
             this.BT_Send.Click += new System.EventHandler(this.BT_Send_Click);
-            // 
-            // BT_Return
-            // 
-            this.BT_Return.Location = new System.Drawing.Point(238, 347);
-            this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(95, 23);
-            this.BT_Return.TabIndex = 9;
-            this.BT_Return.Text = "Retour";
-            this.BT_Return.UseVisualStyleBackColor = true;
-            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
             // 
             // LBL_SendFrom
             // 
@@ -119,14 +114,53 @@
             this.IB_SendFrom.Size = new System.Drawing.Size(287, 20);
             this.IB_SendFrom.TabIndex = 11;
             // 
+            // LBL_FAI
+            // 
+            this.LBL_FAI.AutoSize = true;
+            this.LBL_FAI.Location = new System.Drawing.Point(13, 347);
+            this.LBL_FAI.Name = "LBL_FAI";
+            this.LBL_FAI.Size = new System.Drawing.Size(170, 13);
+            this.LBL_FAI.TabIndex = 12;
+            this.LBL_FAI.Text = "Votre fournisseur d\'accès internet :";
+            // 
+            // CB_FAI
+            // 
+            this.CB_FAI.FormattingEnabled = true;
+            this.CB_FAI.Items.AddRange(new object[] {
+            "orange",
+            "free",
+            "sfr",
+            "bouygues",
+            "numericable",
+            "wanadoo"});
+            this.CB_FAI.Location = new System.Drawing.Point(189, 344);
+            this.CB_FAI.Name = "CB_FAI";
+            this.CB_FAI.Size = new System.Drawing.Size(151, 21);
+            this.CB_FAI.TabIndex = 13;
+            // 
+            // BT_Return
+            // 
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 400);
+            this.BT_Return.Name = "BT_Return";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 37;
+            this.BT_Return.UseVisualStyleBackColor = true;
+            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
             // Contact_Us
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 382);
+            this.ClientSize = new System.Drawing.Size(484, 453);
+            this.Controls.Add(this.BT_Return);
+            this.Controls.Add(this.CB_FAI);
+            this.Controls.Add(this.LBL_FAI);
             this.Controls.Add(this.IB_SendFrom);
             this.Controls.Add(this.LBL_SendFrom);
-            this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.BT_Send);
             this.Controls.Add(this.IB_Contains);
             this.Controls.Add(this.LBL_Contains);
@@ -136,6 +170,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Contact_Us";
             this.Text = "Nous contacter";
+            this.Load += new System.EventHandler(this.Contact_Us_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,8 +184,10 @@
         private System.Windows.Forms.Label LBL_Contains;
         private System.Windows.Forms.TextBox IB_Contains;
         private System.Windows.Forms.Button BT_Send;
-        private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.Label LBL_SendFrom;
         private System.Windows.Forms.TextBox IB_SendFrom;
+        private System.Windows.Forms.Label LBL_FAI;
+        private System.Windows.Forms.ComboBox CB_FAI;
+        private System.Windows.Forms.Button BT_Return;
     }
 }

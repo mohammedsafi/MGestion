@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit_Ann));
-            this.BT_Ref_Tofind = new System.Windows.Forms.Button();
             this.TB_Ref_Tofind = new System.Windows.Forms.TextBox();
             this.LBL_Ref_Tofind = new System.Windows.Forms.Label();
             this.LBL_Title_Deux = new System.Windows.Forms.Label();
@@ -37,8 +36,6 @@
             this.CB_Author = new System.Windows.Forms.ComboBox();
             this.CB_Job_Cible = new System.Windows.Forms.ComboBox();
             this.CB_Ctrat_Type = new System.Windows.Forms.ComboBox();
-            this.BT_Edit_Ann = new System.Windows.Forms.Button();
-            this.BT_Return = new System.Windows.Forms.Button();
             this.LBL_Society_Author = new System.Windows.Forms.Label();
             this.LBL_Job_Cible = new System.Windows.Forms.Label();
             this.LBL_Ctrat_Type = new System.Windows.Forms.Label();
@@ -59,20 +56,15 @@
             this.IB_Address = new System.Windows.Forms.TextBox();
             this.IB_About_Post = new System.Windows.Forms.TextBox();
             this.IB_About_Profil = new System.Windows.Forms.TextBox();
-            this.IB_Date_Topost = new System.Windows.Forms.TextBox();
             this.IB_Time_Todiff = new System.Windows.Forms.TextBox();
             this.IB_Title = new System.Windows.Forms.TextBox();
+            this.DTP_Start = new System.Windows.Forms.DateTimePicker();
+            this.LBL_Ref = new System.Windows.Forms.Label();
+            this.IB_Ref = new System.Windows.Forms.TextBox();
+            this.BT_Ref_Tofind = new System.Windows.Forms.Button();
+            this.BT_Return = new System.Windows.Forms.Button();
+            this.BT_Edit_Ann = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // BT_Ref_Tofind
-            // 
-            this.BT_Ref_Tofind.Location = new System.Drawing.Point(149, 112);
-            this.BT_Ref_Tofind.Name = "BT_Ref_Tofind";
-            this.BT_Ref_Tofind.Size = new System.Drawing.Size(103, 23);
-            this.BT_Ref_Tofind.TabIndex = 53;
-            this.BT_Ref_Tofind.Text = "Trouver l\'annonce";
-            this.BT_Ref_Tofind.UseVisualStyleBackColor = true;
-            this.BT_Ref_Tofind.Click += new System.EventHandler(this.BT_Ref_Tofind_Click);
             // 
             // TB_Ref_Tofind
             // 
@@ -133,26 +125,6 @@
             this.CB_Ctrat_Type.Name = "CB_Ctrat_Type";
             this.CB_Ctrat_Type.Size = new System.Drawing.Size(228, 21);
             this.CB_Ctrat_Type.TabIndex = 82;
-            // 
-            // BT_Edit_Ann
-            // 
-            this.BT_Edit_Ann.Location = new System.Drawing.Point(136, 680);
-            this.BT_Edit_Ann.Name = "BT_Edit_Ann";
-            this.BT_Edit_Ann.Size = new System.Drawing.Size(110, 23);
-            this.BT_Edit_Ann.TabIndex = 81;
-            this.BT_Edit_Ann.Text = "Modifier l\'annonce";
-            this.BT_Edit_Ann.UseVisualStyleBackColor = true;
-            this.BT_Edit_Ann.Click += new System.EventHandler(this.BT_Edit_Ann_Click);
-            // 
-            // BT_Return
-            // 
-            this.BT_Return.Location = new System.Drawing.Point(327, 680);
-            this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(110, 23);
-            this.BT_Return.TabIndex = 80;
-            this.BT_Return.Text = "Retour";
-            this.BT_Return.UseVisualStyleBackColor = true;
-            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
             // 
             // LBL_Society_Author
             // 
@@ -322,13 +294,6 @@
             this.IB_About_Profil.Size = new System.Drawing.Size(228, 60);
             this.IB_About_Profil.TabIndex = 59;
             // 
-            // IB_Date_Topost
-            // 
-            this.IB_Date_Topost.Location = new System.Drawing.Point(189, 258);
-            this.IB_Date_Topost.Name = "IB_Date_Topost";
-            this.IB_Date_Topost.Size = new System.Drawing.Size(228, 20);
-            this.IB_Date_Topost.TabIndex = 58;
-            // 
             // IB_Time_Todiff
             // 
             this.IB_Time_Todiff.Location = new System.Drawing.Point(189, 232);
@@ -343,16 +308,82 @@
             this.IB_Title.Size = new System.Drawing.Size(228, 20);
             this.IB_Title.TabIndex = 56;
             // 
+            // DTP_Start
+            // 
+            this.DTP_Start.Location = new System.Drawing.Point(189, 258);
+            this.DTP_Start.Name = "DTP_Start";
+            this.DTP_Start.Size = new System.Drawing.Size(228, 20);
+            this.DTP_Start.TabIndex = 85;
+            // 
+            // LBL_Ref
+            // 
+            this.LBL_Ref.AutoSize = true;
+            this.LBL_Ref.Location = new System.Drawing.Point(12, 645);
+            this.LBL_Ref.Name = "LBL_Ref";
+            this.LBL_Ref.Size = new System.Drawing.Size(121, 13);
+            this.LBL_Ref.TabIndex = 87;
+            this.LBL_Ref.Text = "Référnce de l\'annonce :";
+            // 
+            // IB_Ref
+            // 
+            this.IB_Ref.Location = new System.Drawing.Point(189, 642);
+            this.IB_Ref.Name = "IB_Ref";
+            this.IB_Ref.Size = new System.Drawing.Size(228, 20);
+            this.IB_Ref.TabIndex = 86;
+            // 
+            // BT_Ref_Tofind
+            // 
+            this.BT_Ref_Tofind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Ref_Tofind.BackgroundImage")));
+            this.BT_Ref_Tofind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Ref_Tofind.FlatAppearance.BorderSize = 0;
+            this.BT_Ref_Tofind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Ref_Tofind.Location = new System.Drawing.Point(198, 112);
+            this.BT_Ref_Tofind.Name = "BT_Ref_Tofind";
+            this.BT_Ref_Tofind.Size = new System.Drawing.Size(42, 41);
+            this.BT_Ref_Tofind.TabIndex = 88;
+            this.BT_Ref_Tofind.UseVisualStyleBackColor = true;
+            this.BT_Ref_Tofind.Click += new System.EventHandler(this.BT_Ref_Tofind_Click);
+            // 
+            // BT_Return
+            // 
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(4, 685);
+            this.BT_Return.Name = "BT_Return";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 89;
+            this.BT_Return.UseVisualStyleBackColor = true;
+            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
+            // BT_Edit_Ann
+            // 
+            this.BT_Edit_Ann.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Edit_Ann.BackgroundImage")));
+            this.BT_Edit_Ann.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Edit_Ann.FlatAppearance.BorderSize = 0;
+            this.BT_Edit_Ann.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Edit_Ann.Location = new System.Drawing.Point(389, 685);
+            this.BT_Edit_Ann.Name = "BT_Edit_Ann";
+            this.BT_Edit_Ann.Size = new System.Drawing.Size(42, 41);
+            this.BT_Edit_Ann.TabIndex = 90;
+            this.BT_Edit_Ann.UseVisualStyleBackColor = true;
+            this.BT_Edit_Ann.Click += new System.EventHandler(this.BT_Edit_Ann_Click);
+            // 
             // Edit_Ann
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 708);
+            this.ClientSize = new System.Drawing.Size(443, 738);
+            this.Controls.Add(this.BT_Edit_Ann);
+            this.Controls.Add(this.BT_Return);
+            this.Controls.Add(this.BT_Ref_Tofind);
+            this.Controls.Add(this.LBL_Ref);
+            this.Controls.Add(this.IB_Ref);
+            this.Controls.Add(this.DTP_Start);
             this.Controls.Add(this.CB_Author);
             this.Controls.Add(this.CB_Job_Cible);
             this.Controls.Add(this.CB_Ctrat_Type);
-            this.Controls.Add(this.BT_Edit_Ann);
-            this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.LBL_Society_Author);
             this.Controls.Add(this.LBL_Job_Cible);
             this.Controls.Add(this.LBL_Ctrat_Type);
@@ -373,11 +404,9 @@
             this.Controls.Add(this.IB_Address);
             this.Controls.Add(this.IB_About_Post);
             this.Controls.Add(this.IB_About_Profil);
-            this.Controls.Add(this.IB_Date_Topost);
             this.Controls.Add(this.IB_Time_Todiff);
             this.Controls.Add(this.IB_Title);
             this.Controls.Add(this.LBL_Title);
-            this.Controls.Add(this.BT_Ref_Tofind);
             this.Controls.Add(this.TB_Ref_Tofind);
             this.Controls.Add(this.LBL_Ref_Tofind);
             this.Controls.Add(this.LBL_Title_Deux);
@@ -392,7 +421,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BT_Ref_Tofind;
         private System.Windows.Forms.TextBox TB_Ref_Tofind;
         private System.Windows.Forms.Label LBL_Ref_Tofind;
         private System.Windows.Forms.Label LBL_Title_Deux;
@@ -400,8 +428,6 @@
         private System.Windows.Forms.ComboBox CB_Author;
         private System.Windows.Forms.ComboBox CB_Job_Cible;
         private System.Windows.Forms.ComboBox CB_Ctrat_Type;
-        private System.Windows.Forms.Button BT_Edit_Ann;
-        private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.Label LBL_Society_Author;
         private System.Windows.Forms.Label LBL_Job_Cible;
         private System.Windows.Forms.Label LBL_Ctrat_Type;
@@ -422,8 +448,13 @@
         private System.Windows.Forms.TextBox IB_Address;
         private System.Windows.Forms.TextBox IB_About_Post;
         private System.Windows.Forms.TextBox IB_About_Profil;
-        private System.Windows.Forms.TextBox IB_Date_Topost;
         private System.Windows.Forms.TextBox IB_Time_Todiff;
         private System.Windows.Forms.TextBox IB_Title;
+        private System.Windows.Forms.DateTimePicker DTP_Start;
+        private System.Windows.Forms.Label LBL_Ref;
+        private System.Windows.Forms.TextBox IB_Ref;
+        private System.Windows.Forms.Button BT_Ref_Tofind;
+        private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Button BT_Edit_Ann;
     }
 }

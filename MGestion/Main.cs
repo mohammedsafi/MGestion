@@ -25,7 +25,7 @@ namespace MGestion
         private void BT_Add_User_Click(object sender, EventArgs e)
         {
             //Clique sur le bouton pour ajouter un utilisateur
-            Add_User AddUser = new Add_User();
+            BT_Add_User AddUser = new BT_Add_User();
             AddUser.ShowDialog();
         }
 
@@ -156,28 +156,22 @@ namespace MGestion
 
         private void Main_Load(object sender, EventArgs e)
         {
-            //ANCIEN TEST KK QUE JE VEUX PAS DELETE 
-
-            //String Request = "SELECT * FROM personne WHERE Personne_Id = 5;";
-            //List<String> Data = new List<String>();
-            //MySqlConnection Connection;
-            //Connection = Methods_BDD.ConnectionPossible();
-            //Data = Methods_BDD.MakeASelect(Connection, Request, 1);
-            //Int16 I = 0;
-            //Int16 Countest = 0;
-            //while (I < Data.Count)
-            //{
-            //    String MSG = "VALUE : " + Data.ElementAt(I).ToString();
-            //    String TITLE = "ELEMENT : " + I.ToString();
-            //    MessageBox.ShowDialog(MSG, TITLE);
-            //    I++;
-            //}
-            //Countest = Methods_BDD.MakeACount(Connection, "SELECT COUNT(*) FROM personne;");
-            //string test = Countest.ToString();
-            //MessageBox.ShowDialog(test, "COUNT");
-            //Methods_BDD.CloseConnectionPossible(Connection);
-            
-
+            //Ajoute les aides dans les bulles
+            ToolTip TT = new ToolTip();
+            TT.SetToolTip(this.BT_Add_Annon, "Ajouter une annonce");
+            TT.SetToolTip(this.BT_Del_Annon, "Supprimer une annonce");
+            TT.SetToolTip(this.BT_See_Annon, "Visualiser une annonce");
+            TT.SetToolTip(this.BT_Edit_Annon, "Editer une annonce");
+            TT.SetToolTip(this.BT_Add_Soc, "Ajouter une société");
+            TT.SetToolTip(this.BT_Del_Soc, "Supprimer une société");
+            TT.SetToolTip(this.BT_Edit_Soc, "Editer une société");
+            TT.SetToolTip(this.BT_See_Soc, "Visualiser une société");
+            TT.SetToolTip(this.BT_Add_User, "Ajouter un utilisateur");
+            TT.SetToolTip(this.BT_Del_User, "Supprimer un utilisateur");
+            TT.SetToolTip(this.BT_See_User, "Visualiser un utilisateur");
+            TT.SetToolTip(this.BT_Edit_User, "Editer un utilisateur");
+            TT.SetToolTip(this.MS_Menu, "Barre de configuration, d'aide, et d'information");
+            FontDialog FD = new FontDialog();
         }
     }
 }

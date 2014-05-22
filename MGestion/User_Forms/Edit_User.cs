@@ -76,6 +76,7 @@ namespace MGestion
                 MessageBox.Show("L'edition a été effectué", "Successfull"); //Sinon on indique que l'ajout a été effectué
             }
             Methods_BDD.CloseConnectionPossible(Connection); //On ferme la connexion
+            Tofind = TB_Mail.Text.Trim();
             LoadInfo();
         }
 

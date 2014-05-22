@@ -33,7 +33,6 @@
             this.LBL_Titile_Two = new System.Windows.Forms.Label();
             this.LBL_Name_Enterprise_Tofind = new System.Windows.Forms.Label();
             this.TB_Name_Enterprise_Tofind = new System.Windows.Forms.TextBox();
-            this.BT_Name_Enterprise_Tofind = new System.Windows.Forms.Button();
             this.LBL_Name = new System.Windows.Forms.Label();
             this.LBL_Social_Reason = new System.Windows.Forms.Label();
             this.LBL_Address = new System.Windows.Forms.Label();
@@ -42,9 +41,6 @@
             this.LBL_Type = new System.Windows.Forms.Label();
             this.LBL_Mail = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.BT_Edit_Soc = new System.Windows.Forms.Button();
-            this.BT_Return = new System.Windows.Forms.Button();
-            this.BT_Del_Soc = new System.Windows.Forms.Button();
             this.TB_Phone_Number = new System.Windows.Forms.TextBox();
             this.TB_Mail = new System.Windows.Forms.TextBox();
             this.TB_Type = new System.Windows.Forms.TextBox();
@@ -53,6 +49,10 @@
             this.TB_Address = new System.Windows.Forms.TextBox();
             this.TB_Social_Reason = new System.Windows.Forms.TextBox();
             this.TB_Name = new System.Windows.Forms.TextBox();
+            this.BT_Name_Enterprise_Tofind = new System.Windows.Forms.Button();
+            this.BT_Return = new System.Windows.Forms.Button();
+            this.BT_Del_Soc = new System.Windows.Forms.Button();
+            this.BT_Edit_Soc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -69,7 +69,7 @@
             // 
             this.LBL_Titile_Two.AutoSize = true;
             this.LBL_Titile_Two.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Titile_Two.Location = new System.Drawing.Point(55, 146);
+            this.LBL_Titile_Two.Location = new System.Drawing.Point(57, 152);
             this.LBL_Titile_Two.Name = "LBL_Titile_Two";
             this.LBL_Titile_Two.Size = new System.Drawing.Size(264, 25);
             this.LBL_Titile_Two.TabIndex = 3;
@@ -90,16 +90,6 @@
             this.TB_Name_Enterprise_Tofind.Name = "TB_Name_Enterprise_Tofind";
             this.TB_Name_Enterprise_Tofind.Size = new System.Drawing.Size(182, 20);
             this.TB_Name_Enterprise_Tofind.TabIndex = 5;
-            // 
-            // BT_Name_Enterprise_Tofind
-            // 
-            this.BT_Name_Enterprise_Tofind.Location = new System.Drawing.Point(121, 108);
-            this.BT_Name_Enterprise_Tofind.Name = "BT_Name_Enterprise_Tofind";
-            this.BT_Name_Enterprise_Tofind.Size = new System.Drawing.Size(114, 23);
-            this.BT_Name_Enterprise_Tofind.TabIndex = 6;
-            this.BT_Name_Enterprise_Tofind.Text = "Trouver l\'entreprise";
-            this.BT_Name_Enterprise_Tofind.UseVisualStyleBackColor = true;
-            this.BT_Name_Enterprise_Tofind.Click += new System.EventHandler(this.BT_Name_Enterprise_Tofind_Click);
             // 
             // LBL_Name
             // 
@@ -173,36 +163,6 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Téléphone : ";
             // 
-            // BT_Edit_Soc
-            // 
-            this.BT_Edit_Soc.Location = new System.Drawing.Point(80, 427);
-            this.BT_Edit_Soc.Name = "BT_Edit_Soc";
-            this.BT_Edit_Soc.Size = new System.Drawing.Size(95, 51);
-            this.BT_Edit_Soc.TabIndex = 21;
-            this.BT_Edit_Soc.Text = "Modifier la société";
-            this.BT_Edit_Soc.UseVisualStyleBackColor = true;
-            this.BT_Edit_Soc.Click += new System.EventHandler(this.BT_Edit_Soc_Click);
-            // 
-            // BT_Return
-            // 
-            this.BT_Return.Location = new System.Drawing.Point(282, 427);
-            this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(95, 51);
-            this.BT_Return.TabIndex = 20;
-            this.BT_Return.Text = "Retour";
-            this.BT_Return.UseVisualStyleBackColor = true;
-            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
-            // 
-            // BT_Del_Soc
-            // 
-            this.BT_Del_Soc.Location = new System.Drawing.Point(181, 427);
-            this.BT_Del_Soc.Name = "BT_Del_Soc";
-            this.BT_Del_Soc.Size = new System.Drawing.Size(95, 51);
-            this.BT_Del_Soc.TabIndex = 19;
-            this.BT_Del_Soc.Text = "Supprimer la société";
-            this.BT_Del_Soc.UseVisualStyleBackColor = true;
-            this.BT_Del_Soc.Click += new System.EventHandler(this.BT_Del_Soc_Click);
-            // 
             // TB_Phone_Number
             // 
             this.TB_Phone_Number.Location = new System.Drawing.Point(109, 385);
@@ -267,11 +227,67 @@
             this.TB_Name.Size = new System.Drawing.Size(155, 20);
             this.TB_Name.TabIndex = 46;
             // 
+            // BT_Name_Enterprise_Tofind
+            // 
+            this.BT_Name_Enterprise_Tofind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Name_Enterprise_Tofind.BackgroundImage")));
+            this.BT_Name_Enterprise_Tofind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Name_Enterprise_Tofind.FlatAppearance.BorderSize = 0;
+            this.BT_Name_Enterprise_Tofind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Name_Enterprise_Tofind.Location = new System.Drawing.Point(181, 108);
+            this.BT_Name_Enterprise_Tofind.Name = "BT_Name_Enterprise_Tofind";
+            this.BT_Name_Enterprise_Tofind.Size = new System.Drawing.Size(42, 41);
+            this.BT_Name_Enterprise_Tofind.TabIndex = 54;
+            this.BT_Name_Enterprise_Tofind.UseVisualStyleBackColor = true;
+            this.BT_Name_Enterprise_Tofind.Click += new System.EventHandler(this.BT_Name_Enterprise_Tofind_Click);
+            // 
+            // BT_Return
+            // 
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 437);
+            this.BT_Return.Name = "BT_Return";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 55;
+            this.BT_Return.UseVisualStyleBackColor = true;
+            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
+            // BT_Del_Soc
+            // 
+            this.BT_Del_Soc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Del_Soc.BackgroundImage")));
+            this.BT_Del_Soc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Del_Soc.FlatAppearance.BorderSize = 0;
+            this.BT_Del_Soc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Del_Soc.Location = new System.Drawing.Point(335, 437);
+            this.BT_Del_Soc.Name = "BT_Del_Soc";
+            this.BT_Del_Soc.Size = new System.Drawing.Size(42, 41);
+            this.BT_Del_Soc.TabIndex = 56;
+            this.BT_Del_Soc.UseVisualStyleBackColor = true;
+            this.BT_Del_Soc.Click += new System.EventHandler(this.BT_Del_Soc_Click);
+            // 
+            // BT_Edit_Soc
+            // 
+            this.BT_Edit_Soc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Edit_Soc.BackgroundImage")));
+            this.BT_Edit_Soc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Edit_Soc.FlatAppearance.BorderSize = 0;
+            this.BT_Edit_Soc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Edit_Soc.Location = new System.Drawing.Point(270, 437);
+            this.BT_Edit_Soc.Name = "BT_Edit_Soc";
+            this.BT_Edit_Soc.Size = new System.Drawing.Size(42, 41);
+            this.BT_Edit_Soc.TabIndex = 57;
+            this.BT_Edit_Soc.UseVisualStyleBackColor = true;
+            this.BT_Edit_Soc.Click += new System.EventHandler(this.BT_Edit_Soc_Click);
+            // 
             // See_Soc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 490);
+            this.Controls.Add(this.BT_Edit_Soc);
+            this.Controls.Add(this.BT_Del_Soc);
+            this.Controls.Add(this.BT_Return);
+            this.Controls.Add(this.BT_Name_Enterprise_Tofind);
             this.Controls.Add(this.TB_Phone_Number);
             this.Controls.Add(this.TB_Mail);
             this.Controls.Add(this.TB_Type);
@@ -280,9 +296,6 @@
             this.Controls.Add(this.TB_Address);
             this.Controls.Add(this.TB_Social_Reason);
             this.Controls.Add(this.TB_Name);
-            this.Controls.Add(this.BT_Edit_Soc);
-            this.Controls.Add(this.BT_Return);
-            this.Controls.Add(this.BT_Del_Soc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LBL_Mail);
             this.Controls.Add(this.LBL_Type);
@@ -291,7 +304,6 @@
             this.Controls.Add(this.LBL_Address);
             this.Controls.Add(this.LBL_Social_Reason);
             this.Controls.Add(this.LBL_Name);
-            this.Controls.Add(this.BT_Name_Enterprise_Tofind);
             this.Controls.Add(this.TB_Name_Enterprise_Tofind);
             this.Controls.Add(this.LBL_Name_Enterprise_Tofind);
             this.Controls.Add(this.LBL_Titile_Two);
@@ -311,7 +323,6 @@
         private System.Windows.Forms.Label LBL_Titile_Two;
         private System.Windows.Forms.Label LBL_Name_Enterprise_Tofind;
         private System.Windows.Forms.TextBox TB_Name_Enterprise_Tofind;
-        private System.Windows.Forms.Button BT_Name_Enterprise_Tofind;
         private System.Windows.Forms.Label LBL_Name;
         private System.Windows.Forms.Label LBL_Social_Reason;
         private System.Windows.Forms.Label LBL_Address;
@@ -320,9 +331,6 @@
         private System.Windows.Forms.Label LBL_Type;
         private System.Windows.Forms.Label LBL_Mail;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button BT_Edit_Soc;
-        private System.Windows.Forms.Button BT_Return;
-        private System.Windows.Forms.Button BT_Del_Soc;
         private System.Windows.Forms.TextBox TB_Phone_Number;
         private System.Windows.Forms.TextBox TB_Mail;
         private System.Windows.Forms.TextBox TB_Type;
@@ -331,5 +339,9 @@
         private System.Windows.Forms.TextBox TB_Address;
         private System.Windows.Forms.TextBox TB_Social_Reason;
         private System.Windows.Forms.TextBox TB_Name;
+        private System.Windows.Forms.Button BT_Name_Enterprise_Tofind;
+        private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Button BT_Del_Soc;
+        private System.Windows.Forms.Button BT_Edit_Soc;
     }
 }

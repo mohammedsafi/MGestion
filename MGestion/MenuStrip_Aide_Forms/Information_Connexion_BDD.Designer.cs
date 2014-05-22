@@ -56,11 +56,14 @@
             // 
             // BT_Return
             // 
-            this.BT_Return.Location = new System.Drawing.Point(188, 173);
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(202, 160);
             this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(75, 23);
-            this.BT_Return.TabIndex = 2;
-            this.BT_Return.Text = "Retour";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 37;
             this.BT_Return.UseVisualStyleBackColor = true;
             this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
             // 

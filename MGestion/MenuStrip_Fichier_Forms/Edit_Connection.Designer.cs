@@ -33,13 +33,13 @@
             this.LBL_Edit_Ip_Server = new System.Windows.Forms.Label();
             this.LBL_Edit_BDD_User = new System.Windows.Forms.Label();
             this.LBL_Edit_BDD_Pass = new System.Windows.Forms.Label();
-            this.BT_Valid_Edit = new System.Windows.Forms.Button();
-            this.BT_Return = new System.Windows.Forms.Button();
             this.IB_Edit_Ip_Server = new System.Windows.Forms.TextBox();
             this.IB_Edit_BDD_User = new System.Windows.Forms.TextBox();
             this.IB_Edit_BDD_Pass = new System.Windows.Forms.TextBox();
             this.LBL_Edit_BDD_Used = new System.Windows.Forms.Label();
             this.IB_Edit_BDD_Used = new System.Windows.Forms.TextBox();
+            this.BT_Return = new System.Windows.Forms.Button();
+            this.BT_Valid_Edit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -79,26 +79,6 @@
             this.LBL_Edit_BDD_Pass.TabIndex = 3;
             this.LBL_Edit_BDD_Pass.Text = "MDP utilisé lors de la connexions  à la BDD :";
             // 
-            // BT_Valid_Edit
-            // 
-            this.BT_Valid_Edit.Location = new System.Drawing.Point(123, 278);
-            this.BT_Valid_Edit.Name = "BT_Valid_Edit";
-            this.BT_Valid_Edit.Size = new System.Drawing.Size(75, 23);
-            this.BT_Valid_Edit.TabIndex = 4;
-            this.BT_Valid_Edit.Text = "Je valide";
-            this.BT_Valid_Edit.UseVisualStyleBackColor = true;
-            this.BT_Valid_Edit.Click += new System.EventHandler(this.BT_Valid_Edit_Click);
-            // 
-            // BT_Return
-            // 
-            this.BT_Return.Location = new System.Drawing.Point(309, 278);
-            this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(75, 23);
-            this.BT_Return.TabIndex = 5;
-            this.BT_Return.Text = "Retour";
-            this.BT_Return.UseVisualStyleBackColor = true;
-            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
-            // 
             // IB_Edit_Ip_Server
             // 
             this.IB_Edit_Ip_Server.Location = new System.Drawing.Point(167, 114);
@@ -136,18 +116,46 @@
             this.IB_Edit_BDD_Used.Size = new System.Drawing.Size(227, 20);
             this.IB_Edit_BDD_Used.TabIndex = 10;
             // 
+            // BT_Return
+            // 
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 269);
+            this.BT_Return.Name = "BT_Return";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 35;
+            this.BT_Return.UseVisualStyleBackColor = true;
+            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
+            // BT_Valid_Edit
+            // 
+            this.BT_Valid_Edit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Valid_Edit.BackgroundImage")));
+            this.BT_Valid_Edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Valid_Edit.FlatAppearance.BorderSize = 0;
+            this.BT_Valid_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Valid_Edit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BT_Valid_Edit.Location = new System.Drawing.Point(488, 269);
+            this.BT_Valid_Edit.Name = "BT_Valid_Edit";
+            this.BT_Valid_Edit.Size = new System.Drawing.Size(42, 41);
+            this.BT_Valid_Edit.TabIndex = 36;
+            this.BT_Valid_Edit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BT_Valid_Edit.UseVisualStyleBackColor = true;
+            this.BT_Valid_Edit.Click += new System.EventHandler(this.BT_Valid_Edit_Click);
+            // 
             // Edit_Connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 351);
+            this.ClientSize = new System.Drawing.Size(542, 330);
+            this.Controls.Add(this.BT_Valid_Edit);
+            this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.IB_Edit_BDD_Used);
             this.Controls.Add(this.LBL_Edit_BDD_Used);
             this.Controls.Add(this.IB_Edit_BDD_Pass);
             this.Controls.Add(this.IB_Edit_BDD_User);
             this.Controls.Add(this.IB_Edit_Ip_Server);
-            this.Controls.Add(this.BT_Return);
-            this.Controls.Add(this.BT_Valid_Edit);
             this.Controls.Add(this.LBL_Edit_BDD_Pass);
             this.Controls.Add(this.LBL_Edit_BDD_User);
             this.Controls.Add(this.LBL_Edit_Ip_Server);
@@ -167,12 +175,12 @@
         private System.Windows.Forms.Label LBL_Edit_Ip_Server;
         private System.Windows.Forms.Label LBL_Edit_BDD_User;
         private System.Windows.Forms.Label LBL_Edit_BDD_Pass;
-        private System.Windows.Forms.Button BT_Valid_Edit;
-        private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.TextBox IB_Edit_Ip_Server;
         private System.Windows.Forms.TextBox IB_Edit_BDD_User;
         private System.Windows.Forms.TextBox IB_Edit_BDD_Pass;
         private System.Windows.Forms.Label LBL_Edit_BDD_Used;
         private System.Windows.Forms.TextBox IB_Edit_BDD_Used;
+        private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Button BT_Valid_Edit;
     }
 }

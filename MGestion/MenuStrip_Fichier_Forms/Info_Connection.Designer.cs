@@ -35,8 +35,8 @@
             this.LBL_BDD_Pass = new System.Windows.Forms.Label();
             this.LBL_BDD_Check = new System.Windows.Forms.Label();
             this.LBL_Reply_Time_Ping = new System.Windows.Forms.Label();
-            this.BT_Return = new System.Windows.Forms.Button();
             this.LBL_BDD = new System.Windows.Forms.Label();
+            this.BT_Return = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -94,16 +94,6 @@
             this.LBL_Reply_Time_Ping.TabIndex = 5;
             this.LBL_Reply_Time_Ping.Text = "Temps de réponse du serveur :";
             // 
-            // BT_Return
-            // 
-            this.BT_Return.Location = new System.Drawing.Point(173, 324);
-            this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(75, 23);
-            this.BT_Return.TabIndex = 6;
-            this.BT_Return.Text = "Retour";
-            this.BT_Return.UseVisualStyleBackColor = true;
-            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
-            // 
             // LBL_BDD
             // 
             this.LBL_BDD.AutoSize = true;
@@ -113,13 +103,26 @@
             this.LBL_BDD.TabIndex = 7;
             this.LBL_BDD.Text = "BDD utilisé : ";
             // 
+            // BT_Return
+            // 
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(205, 306);
+            this.BT_Return.Name = "BT_Return";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 35;
+            this.BT_Return.UseVisualStyleBackColor = true;
+            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
             // Info_Connection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 359);
-            this.Controls.Add(this.LBL_BDD);
             this.Controls.Add(this.BT_Return);
+            this.Controls.Add(this.LBL_BDD);
             this.Controls.Add(this.LBL_Reply_Time_Ping);
             this.Controls.Add(this.LBL_BDD_Check);
             this.Controls.Add(this.LBL_BDD_Pass);
@@ -143,7 +146,7 @@
         private System.Windows.Forms.Label LBL_BDD_Pass;
         private System.Windows.Forms.Label LBL_BDD_Check;
         private System.Windows.Forms.Label LBL_Reply_Time_Ping;
-        private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.Label LBL_BDD;
+        private System.Windows.Forms.Button BT_Return;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace MGestion
 {
-    partial class Add_User
+    partial class BT_Add_User
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_User));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BT_Add_User));
             this.LBL_Title = new System.Windows.Forms.Label();
             this.LBL_Fam_Name = new System.Windows.Forms.Label();
             this.IB_Fam_Name = new System.Windows.Forms.TextBox();
@@ -47,11 +47,11 @@
             this.LBL_Phone_Number = new System.Windows.Forms.Label();
             this.LBL_Password = new System.Windows.Forms.Label();
             this.LBL_Website = new System.Windows.Forms.Label();
-            this.BT_Add_User = new System.Windows.Forms.Button();
-            this.BT_Return = new System.Windows.Forms.Button();
             this.IB_Mail = new System.Windows.Forms.TextBox();
             this.LBL_Mail = new System.Windows.Forms.Label();
             this.DTP_Naissance = new System.Windows.Forms.DateTimePicker();
+            this.BT_Return = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -201,26 +201,6 @@
             this.LBL_Website.TabIndex = 19;
             this.LBL_Website.Text = "Site web :";
             // 
-            // BT_Add_User
-            // 
-            this.BT_Add_User.Location = new System.Drawing.Point(12, 404);
-            this.BT_Add_User.Name = "BT_Add_User";
-            this.BT_Add_User.Size = new System.Drawing.Size(129, 23);
-            this.BT_Add_User.TabIndex = 20;
-            this.BT_Add_User.Text = "Je valide ";
-            this.BT_Add_User.UseVisualStyleBackColor = true;
-            this.BT_Add_User.Click += new System.EventHandler(this.BT_Add_User_Click);
-            // 
-            // BT_Return
-            // 
-            this.BT_Return.Location = new System.Drawing.Point(268, 404);
-            this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(129, 23);
-            this.BT_Return.TabIndex = 21;
-            this.BT_Return.Text = "Retour";
-            this.BT_Return.UseVisualStyleBackColor = true;
-            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
-            // 
             // IB_Mail
             // 
             this.IB_Mail.Location = new System.Drawing.Point(142, 179);
@@ -244,16 +224,43 @@
             this.DTP_Naissance.Size = new System.Drawing.Size(168, 20);
             this.DTP_Naissance.TabIndex = 24;
             // 
-            // Add_User
+            // BT_Return
+            // 
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 386);
+            this.BT_Return.Name = "BT_Return";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 35;
+            this.BT_Return.UseVisualStyleBackColor = true;
+            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(355, 386);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 41);
+            this.button1.TabIndex = 36;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // BT_Add_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 439);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.DTP_Naissance);
             this.Controls.Add(this.LBL_Mail);
             this.Controls.Add(this.IB_Mail);
-            this.Controls.Add(this.BT_Return);
-            this.Controls.Add(this.BT_Add_User);
             this.Controls.Add(this.LBL_Website);
             this.Controls.Add(this.LBL_Password);
             this.Controls.Add(this.LBL_Phone_Number);
@@ -273,8 +280,9 @@
             this.Controls.Add(this.LBL_Fam_Name);
             this.Controls.Add(this.LBL_Title);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Add_User";
+            this.Name = "BT_Add_User";
             this.Text = "Ajout d\'utilisateur";
+            this.Load += new System.EventHandler(this.BT_Add_User_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,10 +308,10 @@
         private System.Windows.Forms.Label LBL_Phone_Number;
         private System.Windows.Forms.Label LBL_Password;
         private System.Windows.Forms.Label LBL_Website;
-        private System.Windows.Forms.Button BT_Add_User;
-        private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.TextBox IB_Mail;
         private System.Windows.Forms.Label LBL_Mail;
         private System.Windows.Forms.DateTimePicker DTP_Naissance;
+        private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Button button1;
     }
 }

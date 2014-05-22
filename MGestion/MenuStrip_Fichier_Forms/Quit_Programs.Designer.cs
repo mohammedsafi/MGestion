@@ -66,21 +66,27 @@
             // 
             // LBL_Return
             // 
-            this.LBL_Return.Location = new System.Drawing.Point(395, 200);
+            this.LBL_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LBL_Return.BackgroundImage")));
+            this.LBL_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LBL_Return.FlatAppearance.BorderSize = 0;
+            this.LBL_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LBL_Return.Location = new System.Drawing.Point(525, 191);
             this.LBL_Return.Name = "LBL_Return";
-            this.LBL_Return.Size = new System.Drawing.Size(116, 23);
+            this.LBL_Return.Size = new System.Drawing.Size(42, 41);
             this.LBL_Return.TabIndex = 3;
-            this.LBL_Return.Text = "J\'ai changé d\'avis";
             this.LBL_Return.UseVisualStyleBackColor = true;
             this.LBL_Return.Click += new System.EventHandler(this.LBL_Return_Click);
             // 
             // BT_Quit
             // 
-            this.BT_Quit.Location = new System.Drawing.Point(113, 200);
+            this.BT_Quit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Quit.BackgroundImage")));
+            this.BT_Quit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Quit.FlatAppearance.BorderSize = 0;
+            this.BT_Quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Quit.Location = new System.Drawing.Point(12, 191);
             this.BT_Quit.Name = "BT_Quit";
-            this.BT_Quit.Size = new System.Drawing.Size(116, 23);
-            this.BT_Quit.TabIndex = 4;
-            this.BT_Quit.Text = "Quitter";
+            this.BT_Quit.Size = new System.Drawing.Size(42, 41);
+            this.BT_Quit.TabIndex = 35;
             this.BT_Quit.UseVisualStyleBackColor = true;
             this.BT_Quit.Click += new System.EventHandler(this.BT_Quit_Click);
             // 

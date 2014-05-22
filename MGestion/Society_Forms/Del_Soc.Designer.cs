@@ -32,8 +32,8 @@
             this.LBL_Title = new System.Windows.Forms.Label();
             this.LBL_Name_Todelete = new System.Windows.Forms.Label();
             this.TB_Name_Todelete = new System.Windows.Forms.TextBox();
-            this.BT_Del_Soc = new System.Windows.Forms.Button();
             this.BT_Return = new System.Windows.Forms.Button();
+            this.BT_Del_Soc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -62,33 +62,39 @@
             this.TB_Name_Todelete.Size = new System.Drawing.Size(179, 20);
             this.TB_Name_Todelete.TabIndex = 2;
             // 
-            // BT_Del_Soc
-            // 
-            this.BT_Del_Soc.Location = new System.Drawing.Point(40, 109);
-            this.BT_Del_Soc.Name = "BT_Del_Soc";
-            this.BT_Del_Soc.Size = new System.Drawing.Size(119, 23);
-            this.BT_Del_Soc.TabIndex = 3;
-            this.BT_Del_Soc.Text = "Supprimer l\'entreprise";
-            this.BT_Del_Soc.UseVisualStyleBackColor = true;
-            this.BT_Del_Soc.Click += new System.EventHandler(this.BT_Del_Soc_Click);
-            // 
             // BT_Return
             // 
-            this.BT_Return.Location = new System.Drawing.Point(207, 109);
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 121);
             this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(93, 23);
-            this.BT_Return.TabIndex = 4;
-            this.BT_Return.Text = "Retour";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 35;
             this.BT_Return.UseVisualStyleBackColor = true;
             this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
+            // BT_Del_Soc
+            // 
+            this.BT_Del_Soc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Del_Soc.BackgroundImage")));
+            this.BT_Del_Soc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Del_Soc.FlatAppearance.BorderSize = 0;
+            this.BT_Del_Soc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Del_Soc.Location = new System.Drawing.Point(308, 121);
+            this.BT_Del_Soc.Name = "BT_Del_Soc";
+            this.BT_Del_Soc.Size = new System.Drawing.Size(42, 41);
+            this.BT_Del_Soc.TabIndex = 36;
+            this.BT_Del_Soc.UseVisualStyleBackColor = true;
+            this.BT_Del_Soc.Click += new System.EventHandler(this.BT_Del_Soc_Click);
             // 
             // Del_Soc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 168);
-            this.Controls.Add(this.BT_Return);
+            this.ClientSize = new System.Drawing.Size(362, 174);
             this.Controls.Add(this.BT_Del_Soc);
+            this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.TB_Name_Todelete);
             this.Controls.Add(this.LBL_Name_Todelete);
             this.Controls.Add(this.LBL_Title);
@@ -105,7 +111,7 @@
         private System.Windows.Forms.Label LBL_Title;
         private System.Windows.Forms.Label LBL_Name_Todelete;
         private System.Windows.Forms.TextBox TB_Name_Todelete;
-        private System.Windows.Forms.Button BT_Del_Soc;
         private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Button BT_Del_Soc;
     }
 }

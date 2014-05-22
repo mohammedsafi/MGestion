@@ -12,9 +12,9 @@ using MGestion.Methods; //Inclusion du namespace pour les méthodes
 
 namespace MGestion
 {
-    public partial class Add_User : Form
+    public partial class BT_Add_User : Form
     {
-        public Add_User()
+        public BT_Add_User()
         {
             InitializeComponent();
         }

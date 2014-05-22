@@ -46,8 +46,8 @@
             this.TB_Address = new System.Windows.Forms.TextBox();
             this.TB_Name = new System.Windows.Forms.TextBox();
             this.TB_Social_Reason = new System.Windows.Forms.TextBox();
-            this.BT_Add_Soc = new System.Windows.Forms.Button();
             this.BT_Return = new System.Windows.Forms.Button();
+            this.BT_Add_Soc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -188,33 +188,41 @@
             this.TB_Social_Reason.Size = new System.Drawing.Size(159, 20);
             this.TB_Social_Reason.TabIndex = 16;
             // 
-            // BT_Add_Soc
-            // 
-            this.BT_Add_Soc.Location = new System.Drawing.Point(108, 320);
-            this.BT_Add_Soc.Name = "BT_Add_Soc";
-            this.BT_Add_Soc.Size = new System.Drawing.Size(106, 23);
-            this.BT_Add_Soc.TabIndex = 17;
-            this.BT_Add_Soc.Text = "Ajouter";
-            this.BT_Add_Soc.UseVisualStyleBackColor = true;
-            this.BT_Add_Soc.Click += new System.EventHandler(this.BT_Add_Soc_Click);
-            // 
             // BT_Return
             // 
-            this.BT_Return.Location = new System.Drawing.Point(266, 320);
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 302);
             this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(106, 23);
-            this.BT_Return.TabIndex = 18;
-            this.BT_Return.Text = "Retour";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 35;
             this.BT_Return.UseVisualStyleBackColor = true;
             this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
+            // BT_Add_Soc
+            // 
+            this.BT_Add_Soc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Add_Soc.BackgroundImage")));
+            this.BT_Add_Soc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Add_Soc.FlatAppearance.BorderSize = 0;
+            this.BT_Add_Soc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Add_Soc.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BT_Add_Soc.Location = new System.Drawing.Point(330, 302);
+            this.BT_Add_Soc.Name = "BT_Add_Soc";
+            this.BT_Add_Soc.Size = new System.Drawing.Size(42, 41);
+            this.BT_Add_Soc.TabIndex = 36;
+            this.BT_Add_Soc.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BT_Add_Soc.UseVisualStyleBackColor = true;
+            this.BT_Add_Soc.Click += new System.EventHandler(this.BT_Add_Soc_Click);
             // 
             // Add_Soc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 355);
-            this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.BT_Add_Soc);
+            this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.TB_Social_Reason);
             this.Controls.Add(this.TB_Name);
             this.Controls.Add(this.TB_Address);
@@ -259,7 +267,7 @@
         private System.Windows.Forms.TextBox TB_Address;
         private System.Windows.Forms.TextBox TB_Name;
         private System.Windows.Forms.TextBox TB_Social_Reason;
-        private System.Windows.Forms.Button BT_Add_Soc;
         private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Button BT_Add_Soc;
     }
 }

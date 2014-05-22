@@ -53,13 +53,13 @@
             this.LBL_Job_Cible = new System.Windows.Forms.Label();
             this.LBL_Society_Author = new System.Windows.Forms.Label();
             this.BT_Return = new System.Windows.Forms.Button();
-            this.BT_Add_Ann = new System.Windows.Forms.Button();
             this.CB_Ctrat_Type = new System.Windows.Forms.ComboBox();
             this.CB_Job_Cible = new System.Windows.Forms.ComboBox();
             this.CB_Society_Author = new System.Windows.Forms.ComboBox();
             this.DTP_Sart = new System.Windows.Forms.DateTimePicker();
             this.LBL_Ann_Ref = new System.Windows.Forms.Label();
             this.IB_Ref = new System.Windows.Forms.TextBox();
+            this.BT_Add_Ann = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -256,23 +256,16 @@
             // 
             // BT_Return
             // 
-            this.BT_Return.Location = new System.Drawing.Point(322, 583);
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 600);
             this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(110, 23);
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
             this.BT_Return.TabIndex = 31;
-            this.BT_Return.Text = "Retour";
             this.BT_Return.UseVisualStyleBackColor = true;
             this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
-            // 
-            // BT_Add_Ann
-            // 
-            this.BT_Add_Ann.Location = new System.Drawing.Point(131, 583);
-            this.BT_Add_Ann.Name = "BT_Add_Ann";
-            this.BT_Add_Ann.Size = new System.Drawing.Size(110, 23);
-            this.BT_Add_Ann.TabIndex = 32;
-            this.BT_Add_Ann.Text = "Ajouter l\'annonce";
-            this.BT_Add_Ann.UseVisualStyleBackColor = true;
-            this.BT_Add_Ann.Click += new System.EventHandler(this.BT_Add_Ann_Click);
             // 
             // CB_Ctrat_Type
             // 
@@ -321,11 +314,24 @@
             this.IB_Ref.Size = new System.Drawing.Size(228, 20);
             this.IB_Ref.TabIndex = 38;
             // 
+            // BT_Add_Ann
+            // 
+            this.BT_Add_Ann.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Add_Ann.BackgroundImage")));
+            this.BT_Add_Ann.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Add_Ann.FlatAppearance.BorderSize = 0;
+            this.BT_Add_Ann.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Add_Ann.Location = new System.Drawing.Point(389, 600);
+            this.BT_Add_Ann.Name = "BT_Add_Ann";
+            this.BT_Add_Ann.Size = new System.Drawing.Size(43, 41);
+            this.BT_Add_Ann.TabIndex = 32;
+            this.BT_Add_Ann.UseVisualStyleBackColor = true;
+            this.BT_Add_Ann.Click += new System.EventHandler(this.BT_Add_Ann_Click);
+            // 
             // Add_Ann
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 618);
+            this.ClientSize = new System.Drawing.Size(444, 653);
             this.Controls.Add(this.LBL_Ann_Ref);
             this.Controls.Add(this.IB_Ref);
             this.Controls.Add(this.DTP_Sart);
@@ -392,12 +398,12 @@
         private System.Windows.Forms.Label LBL_Job_Cible;
         private System.Windows.Forms.Label LBL_Society_Author;
         private System.Windows.Forms.Button BT_Return;
-        private System.Windows.Forms.Button BT_Add_Ann;
         private System.Windows.Forms.ComboBox CB_Ctrat_Type;
         private System.Windows.Forms.ComboBox CB_Job_Cible;
         private System.Windows.Forms.ComboBox CB_Society_Author;
         private System.Windows.Forms.DateTimePicker DTP_Sart;
         private System.Windows.Forms.Label LBL_Ann_Ref;
         private System.Windows.Forms.TextBox IB_Ref;
+        private System.Windows.Forms.Button BT_Add_Ann;
     }
 }

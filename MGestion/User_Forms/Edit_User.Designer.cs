@@ -32,7 +32,6 @@
             this.LBL_Title = new System.Windows.Forms.Label();
             this.LBL_Mail_Tofind = new System.Windows.Forms.Label();
             this.IB_Mail_Tofind = new System.Windows.Forms.TextBox();
-            this.BT_Mail_Tofind = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.LBL_Website = new System.Windows.Forms.Label();
             this.LBL_Job = new System.Windows.Forms.Label();
@@ -44,8 +43,6 @@
             this.LBL_Birthdate = new System.Windows.Forms.Label();
             this.LBL_Name = new System.Windows.Forms.Label();
             this.LBL_Fam_Name = new System.Windows.Forms.Label();
-            this.BT_Edit_User = new System.Windows.Forms.Button();
-            this.BT_Return = new System.Windows.Forms.Button();
             this.TB_Fam_Name = new System.Windows.Forms.TextBox();
             this.TB_Name = new System.Windows.Forms.TextBox();
             this.TB_Phone_Number = new System.Windows.Forms.TextBox();
@@ -56,6 +53,9 @@
             this.TB_Job = new System.Windows.Forms.TextBox();
             this.TB_Website = new System.Windows.Forms.TextBox();
             this.DTP_Naissance = new System.Windows.Forms.DateTimePicker();
+            this.BT_Mail_Tofind = new System.Windows.Forms.Button();
+            this.BT_Return = new System.Windows.Forms.Button();
+            this.BT_Edit_User = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -83,16 +83,6 @@
             this.IB_Mail_Tofind.Name = "IB_Mail_Tofind";
             this.IB_Mail_Tofind.Size = new System.Drawing.Size(189, 20);
             this.IB_Mail_Tofind.TabIndex = 2;
-            // 
-            // BT_Mail_Tofind
-            // 
-            this.BT_Mail_Tofind.Location = new System.Drawing.Point(351, 47);
-            this.BT_Mail_Tofind.Name = "BT_Mail_Tofind";
-            this.BT_Mail_Tofind.Size = new System.Drawing.Size(112, 23);
-            this.BT_Mail_Tofind.TabIndex = 3;
-            this.BT_Mail_Tofind.Text = "Chercher l\'utilisateur";
-            this.BT_Mail_Tofind.UseVisualStyleBackColor = true;
-            this.BT_Mail_Tofind.Click += new System.EventHandler(this.BT_Mail_Tofind_Click);
             // 
             // label1
             // 
@@ -194,26 +184,6 @@
             this.LBL_Fam_Name.TabIndex = 15;
             this.LBL_Fam_Name.Text = "Nom : ";
             // 
-            // BT_Edit_User
-            // 
-            this.BT_Edit_User.Location = new System.Drawing.Point(171, 398);
-            this.BT_Edit_User.Name = "BT_Edit_User";
-            this.BT_Edit_User.Size = new System.Drawing.Size(106, 23);
-            this.BT_Edit_User.TabIndex = 25;
-            this.BT_Edit_User.Text = "Modifier l\'utilisateur";
-            this.BT_Edit_User.UseVisualStyleBackColor = true;
-            this.BT_Edit_User.Click += new System.EventHandler(this.BT_Edit_User_Click);
-            // 
-            // BT_Return
-            // 
-            this.BT_Return.Location = new System.Drawing.Point(388, 398);
-            this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(75, 23);
-            this.BT_Return.TabIndex = 26;
-            this.BT_Return.Text = "Retour";
-            this.BT_Return.UseVisualStyleBackColor = true;
-            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
-            // 
             // TB_Fam_Name
             // 
             this.TB_Fam_Name.Location = new System.Drawing.Point(132, 145);
@@ -284,11 +254,53 @@
             this.DTP_Naissance.Size = new System.Drawing.Size(180, 20);
             this.DTP_Naissance.TabIndex = 37;
             // 
+            // BT_Mail_Tofind
+            // 
+            this.BT_Mail_Tofind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Mail_Tofind.BackgroundImage")));
+            this.BT_Mail_Tofind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Mail_Tofind.FlatAppearance.BorderSize = 0;
+            this.BT_Mail_Tofind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Mail_Tofind.Location = new System.Drawing.Point(371, 38);
+            this.BT_Mail_Tofind.Name = "BT_Mail_Tofind";
+            this.BT_Mail_Tofind.Size = new System.Drawing.Size(42, 41);
+            this.BT_Mail_Tofind.TabIndex = 38;
+            this.BT_Mail_Tofind.UseVisualStyleBackColor = true;
+            this.BT_Mail_Tofind.Click += new System.EventHandler(this.BT_Mail_Tofind_Click);
+            // 
+            // BT_Return
+            // 
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 398);
+            this.BT_Return.Name = "BT_Return";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 39;
+            this.BT_Return.UseVisualStyleBackColor = true;
+            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
+            // BT_Edit_User
+            // 
+            this.BT_Edit_User.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Edit_User.BackgroundImage")));
+            this.BT_Edit_User.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Edit_User.FlatAppearance.BorderSize = 0;
+            this.BT_Edit_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Edit_User.Location = new System.Drawing.Point(421, 398);
+            this.BT_Edit_User.Name = "BT_Edit_User";
+            this.BT_Edit_User.Size = new System.Drawing.Size(42, 41);
+            this.BT_Edit_User.TabIndex = 40;
+            this.BT_Edit_User.UseVisualStyleBackColor = true;
+            this.BT_Edit_User.Click += new System.EventHandler(this.BT_Edit_User_Click);
+            // 
             // Edit_User
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 433);
+            this.ClientSize = new System.Drawing.Size(475, 451);
+            this.Controls.Add(this.BT_Edit_User);
+            this.Controls.Add(this.BT_Return);
+            this.Controls.Add(this.BT_Mail_Tofind);
             this.Controls.Add(this.DTP_Naissance);
             this.Controls.Add(this.TB_Website);
             this.Controls.Add(this.TB_Job);
@@ -299,8 +311,6 @@
             this.Controls.Add(this.TB_Phone_Number);
             this.Controls.Add(this.TB_Name);
             this.Controls.Add(this.TB_Fam_Name);
-            this.Controls.Add(this.BT_Return);
-            this.Controls.Add(this.BT_Edit_User);
             this.Controls.Add(this.LBL_Website);
             this.Controls.Add(this.LBL_Job);
             this.Controls.Add(this.LBL_Address);
@@ -312,7 +322,6 @@
             this.Controls.Add(this.LBL_Name);
             this.Controls.Add(this.LBL_Fam_Name);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.BT_Mail_Tofind);
             this.Controls.Add(this.IB_Mail_Tofind);
             this.Controls.Add(this.LBL_Mail_Tofind);
             this.Controls.Add(this.LBL_Title);
@@ -330,7 +339,6 @@
         private System.Windows.Forms.Label LBL_Title;
         private System.Windows.Forms.Label LBL_Mail_Tofind;
         private System.Windows.Forms.TextBox IB_Mail_Tofind;
-        private System.Windows.Forms.Button BT_Mail_Tofind;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LBL_Website;
         private System.Windows.Forms.Label LBL_Job;
@@ -342,8 +350,6 @@
         private System.Windows.Forms.Label LBL_Birthdate;
         private System.Windows.Forms.Label LBL_Name;
         private System.Windows.Forms.Label LBL_Fam_Name;
-        private System.Windows.Forms.Button BT_Edit_User;
-        private System.Windows.Forms.Button BT_Return;
         private System.Windows.Forms.TextBox TB_Fam_Name;
         private System.Windows.Forms.TextBox TB_Name;
         private System.Windows.Forms.TextBox TB_Phone_Number;
@@ -354,5 +360,8 @@
         private System.Windows.Forms.TextBox TB_Job;
         private System.Windows.Forms.TextBox TB_Website;
         private System.Windows.Forms.DateTimePicker DTP_Naissance;
+        private System.Windows.Forms.Button BT_Mail_Tofind;
+        private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Button BT_Edit_User;
     }
 }

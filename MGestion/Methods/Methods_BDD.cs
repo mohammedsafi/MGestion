@@ -172,7 +172,6 @@ namespace MGestion.Methods
 
                             return Data;
                         }
-                        return Data;
                     default:
                         return Data;
                 }

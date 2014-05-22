@@ -33,10 +33,6 @@
             this.LBL_Title_Deux = new System.Windows.Forms.Label();
             this.LBL_Ref_Tofind = new System.Windows.Forms.Label();
             this.TB_Ref_Tofind = new System.Windows.Forms.TextBox();
-            this.BT_Ref_Tofind = new System.Windows.Forms.Button();
-            this.BT_Edit_Ann = new System.Windows.Forms.Button();
-            this.BT_Return = new System.Windows.Forms.Button();
-            this.BT_Del_Ann = new System.Windows.Forms.Button();
             this.LBL_Ref_Ann = new System.Windows.Forms.Label();
             this.CB_Author = new System.Windows.Forms.ComboBox();
             this.CB_Job_Cible = new System.Windows.Forms.ComboBox();
@@ -64,13 +60,17 @@
             this.IB_Date_Topost = new System.Windows.Forms.TextBox();
             this.IB_Time_Todiff = new System.Windows.Forms.TextBox();
             this.IB_Title = new System.Windows.Forms.TextBox();
+            this.BT_Ref_Tofind = new System.Windows.Forms.Button();
+            this.BT_Return = new System.Windows.Forms.Button();
+            this.BT_Del_Ann = new System.Windows.Forms.Button();
+            this.BT_Edit_Ann = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_Title
             // 
             this.LBL_Title.AutoSize = true;
             this.LBL_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL_Title.Location = new System.Drawing.Point(134, 134);
+            this.LBL_Title.Location = new System.Drawing.Point(134, 151);
             this.LBL_Title.Name = "LBL_Title";
             this.LBL_Title.Size = new System.Drawing.Size(264, 25);
             this.LBL_Title.TabIndex = 0;
@@ -102,50 +102,10 @@
             this.TB_Ref_Tofind.Size = new System.Drawing.Size(160, 20);
             this.TB_Ref_Tofind.TabIndex = 3;
             // 
-            // BT_Ref_Tofind
-            // 
-            this.BT_Ref_Tofind.Location = new System.Drawing.Point(202, 96);
-            this.BT_Ref_Tofind.Name = "BT_Ref_Tofind";
-            this.BT_Ref_Tofind.Size = new System.Drawing.Size(103, 23);
-            this.BT_Ref_Tofind.TabIndex = 4;
-            this.BT_Ref_Tofind.Text = "Trouver l\'annonce";
-            this.BT_Ref_Tofind.UseVisualStyleBackColor = true;
-            this.BT_Ref_Tofind.Click += new System.EventHandler(this.BT_Ref_Tofind_Click);
-            // 
-            // BT_Edit_Ann
-            // 
-            this.BT_Edit_Ann.Location = new System.Drawing.Point(240, 708);
-            this.BT_Edit_Ann.Name = "BT_Edit_Ann";
-            this.BT_Edit_Ann.Size = new System.Drawing.Size(95, 51);
-            this.BT_Edit_Ann.TabIndex = 47;
-            this.BT_Edit_Ann.Text = "Modifier l\'annonce";
-            this.BT_Edit_Ann.UseVisualStyleBackColor = true;
-            this.BT_Edit_Ann.Click += new System.EventHandler(this.BT_Edit_Ann_Click);
-            // 
-            // BT_Return
-            // 
-            this.BT_Return.Location = new System.Drawing.Point(442, 708);
-            this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(95, 51);
-            this.BT_Return.TabIndex = 46;
-            this.BT_Return.Text = "Retour";
-            this.BT_Return.UseVisualStyleBackColor = true;
-            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
-            // 
-            // BT_Del_Ann
-            // 
-            this.BT_Del_Ann.Location = new System.Drawing.Point(341, 708);
-            this.BT_Del_Ann.Name = "BT_Del_Ann";
-            this.BT_Del_Ann.Size = new System.Drawing.Size(95, 51);
-            this.BT_Del_Ann.TabIndex = 45;
-            this.BT_Del_Ann.Text = "Supprimer l\'annonce";
-            this.BT_Del_Ann.UseVisualStyleBackColor = true;
-            this.BT_Del_Ann.Click += new System.EventHandler(this.BT_Del_Ann_Click);
-            // 
             // LBL_Ref_Ann
             // 
             this.LBL_Ref_Ann.AutoSize = true;
-            this.LBL_Ref_Ann.Location = new System.Drawing.Point(0, 749);
+            this.LBL_Ref_Ann.Location = new System.Drawing.Point(51, 661);
             this.LBL_Ref_Ann.Name = "LBL_Ref_Ann";
             this.LBL_Ref_Ann.Size = new System.Drawing.Size(79, 13);
             this.LBL_Ref_Ann.TabIndex = 48;
@@ -377,11 +337,67 @@
             this.IB_Title.Size = new System.Drawing.Size(228, 20);
             this.IB_Title.TabIndex = 85;
             // 
+            // BT_Ref_Tofind
+            // 
+            this.BT_Ref_Tofind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Ref_Tofind.BackgroundImage")));
+            this.BT_Ref_Tofind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Ref_Tofind.FlatAppearance.BorderSize = 0;
+            this.BT_Ref_Tofind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Ref_Tofind.Location = new System.Drawing.Point(240, 96);
+            this.BT_Ref_Tofind.Name = "BT_Ref_Tofind";
+            this.BT_Ref_Tofind.Size = new System.Drawing.Size(42, 41);
+            this.BT_Ref_Tofind.TabIndex = 111;
+            this.BT_Ref_Tofind.UseVisualStyleBackColor = true;
+            this.BT_Ref_Tofind.Click += new System.EventHandler(this.BT_Ref_Tofind_Click);
+            // 
+            // BT_Return
+            // 
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 729);
+            this.BT_Return.Name = "BT_Return";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 112;
+            this.BT_Return.UseVisualStyleBackColor = true;
+            this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
+            // 
+            // BT_Del_Ann
+            // 
+            this.BT_Del_Ann.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Del_Ann.BackgroundImage")));
+            this.BT_Del_Ann.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Del_Ann.FlatAppearance.BorderSize = 0;
+            this.BT_Del_Ann.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Del_Ann.Location = new System.Drawing.Point(495, 729);
+            this.BT_Del_Ann.Name = "BT_Del_Ann";
+            this.BT_Del_Ann.Size = new System.Drawing.Size(42, 41);
+            this.BT_Del_Ann.TabIndex = 113;
+            this.BT_Del_Ann.UseVisualStyleBackColor = true;
+            this.BT_Del_Ann.Click += new System.EventHandler(this.BT_Del_Ann_Click);
+            // 
+            // BT_Edit_Ann
+            // 
+            this.BT_Edit_Ann.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Edit_Ann.BackgroundImage")));
+            this.BT_Edit_Ann.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Edit_Ann.FlatAppearance.BorderSize = 0;
+            this.BT_Edit_Ann.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Edit_Ann.Location = new System.Drawing.Point(436, 729);
+            this.BT_Edit_Ann.Name = "BT_Edit_Ann";
+            this.BT_Edit_Ann.Size = new System.Drawing.Size(42, 41);
+            this.BT_Edit_Ann.TabIndex = 114;
+            this.BT_Edit_Ann.UseVisualStyleBackColor = true;
+            this.BT_Edit_Ann.Click += new System.EventHandler(this.BT_Edit_Ann_Click);
+            // 
             // See_Ann
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(549, 782);
+            this.Controls.Add(this.BT_Edit_Ann);
+            this.Controls.Add(this.BT_Del_Ann);
+            this.Controls.Add(this.BT_Return);
+            this.Controls.Add(this.BT_Ref_Tofind);
             this.Controls.Add(this.CB_Author);
             this.Controls.Add(this.CB_Job_Cible);
             this.Controls.Add(this.CB_Ctrat_Type);
@@ -409,10 +425,6 @@
             this.Controls.Add(this.IB_Time_Todiff);
             this.Controls.Add(this.IB_Title);
             this.Controls.Add(this.LBL_Ref_Ann);
-            this.Controls.Add(this.BT_Edit_Ann);
-            this.Controls.Add(this.BT_Return);
-            this.Controls.Add(this.BT_Del_Ann);
-            this.Controls.Add(this.BT_Ref_Tofind);
             this.Controls.Add(this.TB_Ref_Tofind);
             this.Controls.Add(this.LBL_Ref_Tofind);
             this.Controls.Add(this.LBL_Title_Deux);
@@ -432,10 +444,6 @@
         private System.Windows.Forms.Label LBL_Title_Deux;
         private System.Windows.Forms.Label LBL_Ref_Tofind;
         private System.Windows.Forms.TextBox TB_Ref_Tofind;
-        private System.Windows.Forms.Button BT_Ref_Tofind;
-        private System.Windows.Forms.Button BT_Edit_Ann;
-        private System.Windows.Forms.Button BT_Return;
-        private System.Windows.Forms.Button BT_Del_Ann;
         private System.Windows.Forms.Label LBL_Ref_Ann;
         private System.Windows.Forms.ComboBox CB_Author;
         private System.Windows.Forms.ComboBox CB_Job_Cible;
@@ -463,5 +471,9 @@
         private System.Windows.Forms.TextBox IB_Date_Topost;
         private System.Windows.Forms.TextBox IB_Time_Todiff;
         private System.Windows.Forms.TextBox IB_Title;
+        private System.Windows.Forms.Button BT_Ref_Tofind;
+        private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.Button BT_Del_Ann;
+        private System.Windows.Forms.Button BT_Edit_Ann;
     }
 }

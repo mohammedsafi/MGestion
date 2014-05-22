@@ -130,6 +130,21 @@ La même manière que vous l’avez fait pour votre première connexion.
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BT_Return.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAAA5CAYAAACGRC3XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAIISURBVGhD5du7L2xRFMfxQ4SQKCioPQrUEo9EQaf2aG93Q6XU
+        KrUaWkLl0eo8OvwDaKhR3OIWRMTju0ZGxlhnz+xjkjl77V/ySeTkHMn6FWufZGaSHGQew59/xpVGrOEd
+        E3IhprRiFzJ8dAV04QzF4aMqYBA3KB0+mgIm8Q/lw0dRwB88QxtemC2gdNO7mCxANv0etIHLmStA2/Qu
+        pgqQTX8LbdA0ZgqYQtqmdzFRwAJeoA1YSdAFVLvpXYItQDb9PrShfARZQDfOoQ3kK7gC+nENbZgsdrBa
+        J96Zxn9og4TIK7/Z9HlVVWqx6fOqYtpQi02fV87UctPnVWqG4PtOHyI11ja9y48swtqmd/mK5U3vUohs
+        +gNoN1hX2PQXJRdikxyWXYhN0o6YSyikCevQbrDuW5bwCu1Gq35kBo/QbrZIzQjuoD1gTWp6cAntIUuc
+        6cARtAetqBg5ITagPWxB1bF6QnhlFtZOCO+M4h7aPwtRpgxA+65PVrJjluskc+SEOIY2kK9gPxtsxia0
+        oXwE/emw5LcnRPAFSOaQ9YQwUYBkDFlOCDMFSHpxBW3QNKYKkHTiBNqwGnMFSOSE2II2cDmTBUgaIC8b
+        b9AGLzJbQDHyq5AnaMML8wVIxvGAaAuQ9EH7blE0BUjkhDhFtAVIWrCNaAuQyAmxAjkhoiygmL+QV+g6
+        JEk+AEtHj3bq66F4AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAgIAAAAEAIAAoCAEAZgAAAGBgAAABACAAqJQAAI4IAQBAQAAAAQAgAChCAAA2nQEAMDAAAAEA

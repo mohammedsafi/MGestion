@@ -57,20 +57,26 @@
             // 
             // BT_Open_Doc
             // 
-            this.BT_Open_Doc.Location = new System.Drawing.Point(36, 163);
+            this.BT_Open_Doc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Open_Doc.BackgroundImage")));
+            this.BT_Open_Doc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Open_Doc.FlatAppearance.BorderSize = 0;
+            this.BT_Open_Doc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Open_Doc.Location = new System.Drawing.Point(378, 161);
             this.BT_Open_Doc.Name = "BT_Open_Doc";
-            this.BT_Open_Doc.Size = new System.Drawing.Size(136, 23);
+            this.BT_Open_Doc.Size = new System.Drawing.Size(42, 41);
             this.BT_Open_Doc.TabIndex = 2;
-            this.BT_Open_Doc.Text = "Ouvrir la documentation";
             this.BT_Open_Doc.UseVisualStyleBackColor = true;
             // 
             // BT_Return
             // 
-            this.BT_Return.Location = new System.Drawing.Point(248, 163);
+            this.BT_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_Return.BackgroundImage")));
+            this.BT_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_Return.FlatAppearance.BorderSize = 0;
+            this.BT_Return.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Return.Location = new System.Drawing.Point(12, 161);
             this.BT_Return.Name = "BT_Return";
-            this.BT_Return.Size = new System.Drawing.Size(136, 23);
-            this.BT_Return.TabIndex = 3;
-            this.BT_Return.Text = "J\'ai changé d\'avis";
+            this.BT_Return.Size = new System.Drawing.Size(42, 41);
+            this.BT_Return.TabIndex = 36;
             this.BT_Return.UseVisualStyleBackColor = true;
             this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
             // 
