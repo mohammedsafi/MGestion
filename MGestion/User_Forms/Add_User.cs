@@ -12,9 +12,9 @@ using MGestion.Methods; //Inclusion du namespace pour les méthodes
 
 namespace MGestion
 {
-    public partial class BT_Add_User : Form
+    public partial class Add_User : Form
     {
-        public BT_Add_User()
+        public Add_User()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace MGestion
             FindForm().Close(); //Récupère le formulaire sur lequel est l'utilisateur et le ferme
         }
 
-        private void BT_Add_User_Click(object sender, EventArgs e)
+        private void BT_Add_User_Form_Click(object sender, EventArgs e)
         {
             //Si on clique sur ajouter l'utilisateur
             String Request = "";

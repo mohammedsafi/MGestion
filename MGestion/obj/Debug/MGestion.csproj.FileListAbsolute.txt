@@ -48,7 +48,6 @@ C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Add_Soc.res
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Del_Soc.resources
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Edit_Soc.resources
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.See_Soc.resources
-C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Add_User.resources
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Main.resources
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Properties.Resources.resources
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Del_User.resources
@@ -58,3 +57,4 @@ C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.csproj.Gene
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.exe
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.pdb
 C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.csprojResolveAssemblyReference.cache
+C:\Users\Diavol\Desktop\C_Sharp\MGestion\MGestion\obj\Debug\MGestion.Add_User.resources

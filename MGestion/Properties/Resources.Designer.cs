@@ -69,5 +69,15 @@ namespace MGestion.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Byte[].
+        /// </summary>
+        internal static byte[] font {
+            get {
+                object obj = ResourceManager.GetObject("font", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
