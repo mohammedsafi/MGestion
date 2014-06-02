@@ -138,6 +138,7 @@
       <DependentUpon>Quit_Programs.cs</DependentUpon>
     </Compile>
     <Compile Include="Methods\Methods_BDD.cs" />
+    <Compile Include="Methods\Methods_Check.cs" />
     <Compile Include="Methods\Methods_File.cs" />
     <Compile Include="Society_Forms\Add_Soc.cs">
       <SubType>Form</SubType>
