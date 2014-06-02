@@ -10,8 +10,42 @@ namespace MGestion.Methods
 {
     class Methods_Check
     {
+        public static String GetErrorString(Int16 ErrorNumber)
+        {
+            String ErrorString = "";
+            switch (ErrorNumber)
+            {
+                case 1:
+                    ErrorString = "L'email que vous venez de saisir est déjà utilisé en base de donnée";
+                    break;
+                case 2:
+                    ErrorString = "Le nom de société que vous venez de saisir est déjà utilisé en base de donnée";
+                    break;
+                case 3:
+                    ErrorString = "La référence d'annonce que vous venez de saisir est déjà utilisé en base de donnée";
+                    break;
+                case 4:
+                    ErrorString = "Ce champ ne peux contenir que des chiffres..";
+                    break;
+                case 5:
+                    ErrorString = "Le mot de passe doit faire 6 caractère ou plus pour être valide";
+                    break;
+                case 6:
+                    ErrorString = "Certain caractère ne sont pas autorisé, exemple : caractère spéciaux, chiffre, etc.. ";
+                    break;
+                case 7:
+                    ErrorString = "L'url n'est pas correcte, elle doit commencer par http://www.";
+                    break;
+                case 8:
+                    ErrorString = "le format de l'adresse mail n'est pas valide.. ";
+                    break;
+                default:
+                    break;
+            }
+            return ErrorString;
+        }
 
-        public static Boolean AvailableUserMail(String ToSearch)
+        public static Int16 AvailableUserMail(String ToSearch)
         {
             String Request = ""; //Requete SQL
             List<String> Result = new List<String>();
@@ -23,17 +57,17 @@ namespace MGestion.Methods
             {
                 if (ToSearch.Trim() == Result[4].ToString().Trim())
                 {
-                    return false;
+                    return 1;
                 }
             }
             catch (Exception)
             {
 
             }
-            return true;
-        }
+            return 0;
+        } //Erreur 1
 
-        public static Boolean AvailableSocietyName(String ToSearch)
+        public static Int16 AvailableSocietyName(String ToSearch)
         {
             String Request = ""; //Requete SQL
             List<String> Result = new List<String>();
@@ -45,17 +79,17 @@ namespace MGestion.Methods
             {
                 if (ToSearch.Trim() == Result[1].ToString().Trim())
                 {
-                    return false;
+                    return 2;
                 }
             }
             catch (Exception)
             {
 
             }
-            return true;
-        }
+            return 0;
+        } //Erreur 2
 
-        public static Boolean AvailableAnnounceRef(String ToSearch)
+        public static Int16 AvailableAnnounceRef(String ToSearch)
         {
             String Request = ""; //Requete SQL
             List<String> Result = new List<String>();
@@ -67,55 +101,55 @@ namespace MGestion.Methods
             {
                 if (ToSearch.Trim() == Result[14].ToString().Trim())
                 {
-                    return false;
+                    return 3;
                 }
             }
             catch (Exception)
             {
 
             }
-            return true;
-        }
+            return 0;
+        }//Erreur 3
 
-        public static Boolean IsInteger(String value)
+        public static Int16 IsInteger(String value)
         {
             Int32 number;
             bool result = Int32.TryParse(value, out number);
             if (result)
             {
-                return true;
+                return 0;
             }
             else
             {
-                return false;
+                return 4;
             }
-        }
+        }//Erreur 4
 
-        public static Boolean PasswordUserSecurityCheck(String Password)
+        public static Int16 PasswordUserSecurityCheck(String Password)
         {
             if (Password.Length >= 6)
             {
-                return true;
+                return 0;
             }
             else
             {
-                return false;
+                return 5;
             }
-        }
+        }//Erreur 5
 
-        public static Boolean StringSecurityCheck(String StringToCheck)
+        public static Int16 StringSecurityCheck(String StringToCheck)
         {
             foreach ( Char C in StringToCheck)
             {
                 if (C <= 64 && C >= 90 || C <= 96 && C >= 122 )
                 {
-                    return false;
+                    return 6;
                 }
             }
-            return true;
-        }
+            return 0;
+        }//Erreur 6
 
-        public static Boolean URLSecurityCheck(String URL)
+        public static Int16 URLSecurityCheck(String URL)
         {
             Int16 i = 0;
             foreach (Char C in URL.Trim().ToLower())
@@ -127,67 +161,67 @@ namespace MGestion.Methods
                         case 1:
                             if (C != 'h')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 2:
                             if (C != 't')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 3:
                             if (C != 't')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 4:
                             if (C != 'p')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 5:
                             if (C != ':')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 6:
                             if (C != '/')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 7:
                             if (C != '/')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 8:
                             if (C != 'w')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 9:
                             if (C != 'w')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 10:
                             if (C != 'w')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         case 11:
                             if (C != '.')
                             {
-                                return false;
+                                return 7;
                             }
                             break;
                         default:
@@ -196,17 +230,18 @@ namespace MGestion.Methods
                     i++;
                 }
             }
-            return true;
-        }
+            return 0;
+        }//Erreur 7
 
-        public static Boolean MailSecurityCheck(String Mail)
+        public static Int16 MailSecurityCheck(String Mail)
         {
             Boolean MailBool = false;
             if ( Mail.Contains('@').Equals(false) || Mail.Contains('.').Equals(false))
             {
-                return false;
+                return 8;
             }
-            return MailBool;
-        }
+            return 0;
+        }//Erreur 8
+
     }
 }

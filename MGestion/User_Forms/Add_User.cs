@@ -28,12 +28,12 @@ namespace MGestion
         {
             //Si on clique sur ajouter l'utilisateur
             String Request = "";
-            Boolean Error = true;
+            Boolean ErrorRequest = true;
             MySqlConnection Connection;
             Connection = Methods_BDD.ConnectionPossible();
             Request = "INSERT INTO `personne` VALUES ('', '" + IB_Fam_Name.Text + "', '" + IB_Name.Text + "', '" + DTP_Naissance.Value.Date.ToString("yyyy-MM-dd").Trim() + "', '" + IB_Mail.Text + "', '" + IB_Fax_Number.Text + "', '" + IB_Address.Text + "', '" + IB_Job.Text + "', '" + IB_Phone_Number.Text + "', '" + IB_Password.Text + "', '" + IB_Website.Text + "');";
-            Error = Methods_BDD.MakeABasicRequest(Connection, Request);
-            if (!Error)
+            ErrorRequest = Methods_BDD.MakeABasicRequest(Connection, Request);
+            if (!ErrorRequest)
             {
                 MessageBox.Show("L'ajout n'a pas été effectué","Erreur 006");
             }

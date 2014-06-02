@@ -26,7 +26,7 @@ namespace MGestion
 
         private void BT_Send_Click(object sender, EventArgs e)
         {
-            if (CB_FAI.SelectedText != null && CB_FAI.SelectedText != "")
+            if (CB_FAI.SelectedItem != null && CB_FAI.SelectedItem != "")
             {
                 try
                 {
@@ -35,7 +35,7 @@ namespace MGestion
                     Customer.Port = 25; //Déclare le port ( 25 par défaut ) 
                     Customer.DeliveryMethod = SmtpDeliveryMethod.Network; //On l'envois via le réseau ( internet , logique ) 
                     Customer.UseDefaultCredentials = false;
-                    Customer.Host = "smtp."+ CB_FAI.SelectedText +".fr"; //On utilise le smtp de chez gmail pourquoi se faire chier
+                    Customer.Host = "smtp." + CB_FAI.SelectedItem + ".fr"; //On utilise le smtp de chez gmail pourquoi se faire chier
                     Mail.Subject = IB_Object.Text.Trim();
                     Mail.Body = IB_Contains.Text.Trim();
                     Customer.Send(Mail);

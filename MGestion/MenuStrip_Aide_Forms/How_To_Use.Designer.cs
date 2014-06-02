@@ -66,6 +66,7 @@
             this.BT_Open_Doc.Size = new System.Drawing.Size(42, 41);
             this.BT_Open_Doc.TabIndex = 2;
             this.BT_Open_Doc.UseVisualStyleBackColor = true;
+            this.BT_Open_Doc.Click += new System.EventHandler(this.BT_Open_Doc_Click);
             // 
             // BT_Return
             // 

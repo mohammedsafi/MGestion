@@ -159,6 +159,9 @@ namespace MGestion
         private void Main_Load(object sender, EventArgs e)
         {
             //Ajoute les aides dans les bulles
+            Methods_File.Connection_File_Presen();
+
+            //Ajout des tooltips pour la déco 
             ToolTip TT = new ToolTip();
             TT.SetToolTip(this.BT_Add_Annon, "Ajouter une annonce");
             TT.SetToolTip(this.BT_Del_Annon, "Supprimer une annonce");

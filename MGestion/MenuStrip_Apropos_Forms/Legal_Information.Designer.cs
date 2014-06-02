@@ -32,6 +32,7 @@
             this.LBL_Title = new System.Windows.Forms.Label();
             this.LBL_Contains = new System.Windows.Forms.Label();
             this.BT_Return = new System.Windows.Forms.Button();
+            this.LBL_Link = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // LBL_Title
@@ -47,11 +48,12 @@
             // LBL_Contains
             // 
             this.LBL_Contains.AutoSize = true;
-            this.LBL_Contains.Location = new System.Drawing.Point(147, 69);
+            this.LBL_Contains.Location = new System.Drawing.Point(-7, 56);
             this.LBL_Contains.Name = "LBL_Contains";
-            this.LBL_Contains.Size = new System.Drawing.Size(68, 13);
+            this.LBL_Contains.Size = new System.Drawing.Size(416, 156);
             this.LBL_Contains.TabIndex = 1;
-            this.LBL_Contains.Text = "Coming soon";
+            this.LBL_Contains.Text = resources.GetString("LBL_Contains.Text");
+            this.LBL_Contains.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BT_Return
             // 
@@ -66,11 +68,22 @@
             this.BT_Return.UseVisualStyleBackColor = true;
             this.BT_Return.Click += new System.EventHandler(this.BT_Return_Click);
             // 
+            // LBL_Link
+            // 
+            this.LBL_Link.AutoSize = true;
+            this.LBL_Link.Location = new System.Drawing.Point(89, 128);
+            this.LBL_Link.Name = "LBL_Link";
+            this.LBL_Link.Size = new System.Drawing.Size(230, 13);
+            this.LBL_Link.TabIndex = 36;
+            this.LBL_Link.TabStop = true;
+            this.LBL_Link.Text = "http://www.apache.org/licenses/LICENSE-2.0";
+            // 
             // Legal_Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 307);
+            this.Controls.Add(this.LBL_Link);
             this.Controls.Add(this.BT_Return);
             this.Controls.Add(this.LBL_Contains);
             this.Controls.Add(this.LBL_Title);
@@ -87,5 +100,6 @@
         private System.Windows.Forms.Label LBL_Title;
         private System.Windows.Forms.Label LBL_Contains;
         private System.Windows.Forms.Button BT_Return;
+        private System.Windows.Forms.LinkLabel LBL_Link;
     }
 }

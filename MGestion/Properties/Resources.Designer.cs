@@ -59,25 +59,5 @@ namespace MGestion.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
-        /// </summary>
-        internal static byte[] AdOrNaDa_St {
-            get {
-                object obj = ResourceManager.GetObject("AdOrNaDa_St", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
-        /// </summary>
-        internal static byte[] font {
-            get {
-                object obj = ResourceManager.GetObject("font", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

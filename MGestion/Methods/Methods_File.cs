@@ -20,6 +20,13 @@ namespace MGestion.Methods
                 FichierACree.Close(); //Ferme le flux en écriture
                 MessageBox.Show("Fin de la re-création du fichier, merci de bien vouloir modifier les informations de connexion pour saisir les votre", "Re-création du fichier avec succès"); //Affiche le message que l'éxécution a reussis
             }
+
+            if (!(File.Exists("Documentation.txt"))) //Si le fichier de connexion n'est pas présent, alors il y une erreur
+            {
+                StreamWriter FichierACree = File.CreateText("Documentation.txt");
+                FichierACree.Write("Au calme, j'avais pas franchement envie d'écrire toutes la documentation, du coup j'ai juste écrit cette ligne pour tester", true); //Ecrit la ligne
+                FichierACree.Close(); //Ferme le flux en écriture
+            }
         }
 
         public static List<String> Load_File() //Charge le fichier dans une liste et la retourne

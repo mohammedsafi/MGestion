@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : fashionparf
+Source Server         : MegaCasting
 Source Server Version : 50612
-Source Host           : localhost:3306
+Source Host           : 127.0.0.1:3306
 Source Database       : megacasting
 
 Target Server Type    : MYSQL
 Target Server Version : 50612
 File Encoding         : 65001
 
-Date: 2014-05-18 23:22:55
+Date: 2014-06-02 21:43:30
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -48,6 +48,7 @@ CREATE TABLE `annonce` (
 -- ----------------------------
 -- Records of annonce
 -- ----------------------------
+INSERT INTO `annonce` VALUES ('1', 'Annonce TITRE', '105', '2014-05-19', 'Poste ne visant à rien faire', 'Nous rechercons un jeune actif, et qui pourrait éventuellement être autonome\r\n\r\nVous êtes comme cela ? Call us !', '7 rue de Sainte Suzanne', 'Montsûrs', '53150', 'p.ferandin@iia-laval.fr', '0778546527', '1', '1', '1', 'ANN14');
 
 -- ----------------------------
 -- Table structure for `contrat`
@@ -159,7 +160,7 @@ CREATE TABLE `personne` (
   `Personne_Password` varchar(50) NOT NULL COMMENT 'Telephone de la personne',
   `Personne_SiteWeb` varchar(100) NOT NULL COMMENT 'Site web de l''utilisateur',
   PRIMARY KEY (`Personne_Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of personne
